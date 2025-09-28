@@ -43,7 +43,7 @@ const Projects = () => {
                 <h3 className="text-2xl font-semibold">{project.title}</h3>
                 <a
                   href={project.demo}
-                  className="rounded bg-stone-900 p-2 text-sm font-medium text-stone-300"
+                  className="rounded  bg-sky-400 p-2 text-sm font-medium text-gray-200"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="project link"
@@ -56,7 +56,7 @@ const Projects = () => {
                 {project.technologies.map((tech, idx) => (
                   <span
                     key={idx}
-                    className="rounded bg-stone-900 p-2 text-sm font-medium text-stone-300"
+                    className="rounded bg-sky-600 p-2 text-sm font-medium text-gray-300"
                   >
                     {tech}
                   </span>

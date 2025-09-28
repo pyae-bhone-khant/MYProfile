@@ -1,6 +1,5 @@
 import { motion } from "framer-motion";
 
-import profilePic from "../assets/photo.jpg";
 import { HERO_CONTENT } from "../constants/index.js";
 
 const containerVariants = {
@@ -23,14 +22,7 @@ const Hero = () => {
       <div className="flex flex-wrap lg:flex-row-reverse">
         <div className="  lg:w-1/2">
           <div className="  flex justify-center lg:p-8">
-            {/* <motion.img
-              src="https://img.freepik.com/premium-photo/anime-programmer-working-code_1282444-264422.jpg"
-              alt="profile image"
-              className="rounded-3xl border border-stone-900"
-              initial={{ x: 100, opacity: 0 }}
-              animate={{ x: 0, opacity: 1 }}
-              transition={{ duration: 1, delay: 1.5 }}
-            /> */} <motion.img
+          <motion.img
   src="https://img.freepik.com/premium-photo/anime-programmer-working-code_1282444-264422.jpg"
   alt="profile image"
   className="w-96  h-96 rounded-3xl border border-stone-900"
@@ -67,7 +59,7 @@ const Hero = () => {
             </motion.p>
             <motion.a
               variants={childVariants}
-              href="/resume.pdf"
+              href="/public/PBK.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download
@@ -81,5 +73,4 @@ const Hero = () => {
     </div>
   );
 };
-
 export default Hero;
