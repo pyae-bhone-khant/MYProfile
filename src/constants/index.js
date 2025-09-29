@@ -3,6 +3,8 @@ import project1 from "../assets/projects/project1.png"
 import project2 from "../assets/projects/project2.png"
 import project3 from "../assets/projects/project3.png"
 import project4 from "../assets/projects/project4.png"
+import project5 from "../assets/projects/project5.png"
+
 
 
 
@@ -69,6 +71,14 @@ export const PROJECTS = [
     demo: "https://to-do-list-pro-pbk.netlify.app",
   },
   {
+    title: "Fairway clone",
+    image: project5,
+    description:
+      "The project is not finished yet: I'm still working on it",
+    technologies: ["Tailwind", "React", "Express", "MongoDB"],
+    demo: "https://fireway-clone.netlify.app",
+  },
+  {
     title: "CoffeeShop",
     image: project3,
     description:
@@ -76,14 +86,7 @@ export const PROJECTS = [
     technologies: ["Tailwind",  "React", "React-router"],
     demo: "https://coffeeshop-1234.netlify.app",
   },
-  {
-    title: "To Do List",
-    image: image,
-    description:
-      "A sleek and intuitive to-do list app with day and night modes, allowing users to organize and track their daily tasks efficiently in a comfortable interface",
-    technologies: ["Tailwind", "MUI", "React", ],
-    demo: "#",
-  },
+
   {
     title: "Game Store",
     image: project4,
@@ -94,14 +97,6 @@ export const PROJECTS = [
   },
   {
     title: "social",
-    image: image,
-    description:
-      "The project is not finished yet: I'm still working on it",
-    technologies: ["Tailwind", "React", "Express", "MongoDB"],
-    demo: "#",
-  },
-  {
-    title: "Recipe Sharing Platform",
     image: image,
     description:
       "The project is not finished yet: I'm still working on it",
