@@ -56,17 +56,30 @@ const Hero = () => {
               className="my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter"
             >
               {HERO_CONTENT}
-            </motion.p>
+            </motion.p> 
+            <div className="flex gap-2">
+
             <motion.a
               variants={childVariants}
-              href="/PBK.pdf"
+              href="/PyaeBhoneKhant.pdf"
               target="_blank"
               rel="noopener noreferrer"
               download
               className="mb-10 rounded-full bg-white p-4 text-sm text-stone-800"
             >
               Download Resume
+            </motion.a> 
+                 <motion.a
+              variants={childVariants}
+              href="/PyaeBhoneKhant(CL).pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              download
+              className="mb-10 rounded-full bg-gray-400 hover:bg-green-400 p-4 text-sm text-white"
+            >
+              Download Cover letter
             </motion.a>
+            </div>
           </motion.div>
         </div>
       </div>
