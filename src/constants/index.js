@@ -86,7 +86,7 @@ export const PROJECTS = [
     description:
       "The project is not finished yet: I'm still working on it",
     technologies: ["Tailwind", "React"],
-    demo: "fashionshop-12.netlify.app",
+    demo: "https://fashionshop-12.netlify.app",
   },
   {
     title: "CoffeeShop",
