@@ -4,6 +4,8 @@ import project2 from "../assets/projects/project2.png"
 import project3 from "../assets/projects/project3.png"
 import project4 from "../assets/projects/project4.png"
 import project5 from "../assets/projects/project5.png"
+import project6 from "../assets/projects/project6.png"
+
 
 
 
@@ -77,6 +79,14 @@ export const PROJECTS = [
       "The project is not finished yet: I'm still working on it",
     technologies: ["Tailwind", "React", "Express", "MongoDB"],
     demo: "https://fireway-clone.netlify.app",
+  },
+   {
+    title: "FashionWebsite",
+    image: project6,
+    description:
+      "The project is not finished yet: I'm still working on it",
+    technologies: ["Tailwind", "React"],
+    demo: "fashionshop-12.netlify.app",
   },
   {
     title: "CoffeeShop",
