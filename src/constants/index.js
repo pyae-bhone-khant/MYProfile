@@ -1,8 +1,5 @@
 
 import project1 from "../assets/projects/project1.png"
-import project2 from "../assets/projects/project2.png"
-import project3 from "../assets/projects/project3.png"
-import project4 from "../assets/projects/project4.png"
 import project5 from "../assets/projects/project5.png"
 import project6 from "../assets/projects/project6.png"
 import project7 from "../assets/projects/project7.png"
@@ -12,7 +9,6 @@ import project7 from "../assets/projects/project7.png"
 
 
 
-import image from  "../assets/projects/images.png"
 
 export const HERO_CONTENT = `I am self-taught passionate full stack  developer with a strong sense of responsibility
 and organization.I am passionate about modern web
@@ -59,21 +55,15 @@ export const PROJECTS = [
     description:
       "A personal portfolio website showcasing my skills, projects, and experience. Built with modern web technologies, it features a clean design, responsive layout, and smooth navigation to highlight my work effectively.",
     technologies: [
-      
+
       "React",
-       "Tailwind",
-       "React-router",
-       "framer animation"
+      "Tailwind",
+      "React-router",
+      "framer animation"
     ],
     demo: "#",
   },
-  {
-    title: "To-Do-List-Pro",
-    image: project2,
-    description: "A sleek and intuitive to-do list app that helps users organize and track their daily tasks efficiently, with a clean interface. NO Responsive",
-    technologies: ["MUI", "Tailwind", "React"],
-    demo: "https://to-do-list-pro-pbk.netlify.app",
-  },
+
   {
     title: "Fairway clone",
     image: project5,
@@ -82,14 +72,14 @@ export const PROJECTS = [
     technologies: ["Tailwind", "React", "Express", "MongoDB"],
     demo: "https://fireway-clone.netlify.app",
   },
-   {
+  {
     title: "FashionWebsite",
     image: project6,
     description:
       "The project is not finished yet: I'm still working on it",
     technologies: ["Tailwind", "React"],
     demo: "https://fashionshop-12.netlify.app",
-  }, 
+  },
   {
     title: "LearningWeb",
     image: project7,
@@ -98,31 +88,9 @@ export const PROJECTS = [
     technologies: ["Tailwind", "React", "Express", "MongoDB"],
     demo: "https://learningweb12.netlify.app",
   },
-  {
-    title: "CoffeeShop",
-    image: project3,
-    description:
-      "A simple and elegant coffee shop app for browsing menu items and managing orders with ease. NO Mobile Reponsive",
-    technologies: ["Tailwind",  "React", "React-router"],
-    demo: "https://coffeeshop-1234.netlify.app",
-  },
 
-  {
-    title: "Game Store",
-    image: project4,
-    description:
-      "The project is not finished yet: I'm still working on it",
-    technologies: ["Tailwind", "Typescript", "React", "Express", "MongoDB"],
-    demo: "https://github.com/pyae-bhone-khant/Gameapp.git",
-  },
-  {
-    title: "social",
-    image: image,
-    description:
-      "The project is not finished yet: I'm still working on it",
-    technologies: ["Tailwind", "React", "Express", "MongoDB"],
-    demo: "#",
-  },
+
+
 ];
 
 export const CONTACT = {
