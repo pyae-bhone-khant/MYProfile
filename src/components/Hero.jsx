@@ -1,5 +1,4 @@
 import { motion } from "framer-motion";
-import profile from "/public/img/profile";
 
 import { HERO_CONTENT } from "../constants/index.js";
 
@@ -24,7 +23,7 @@ const Hero = () => {
         <div className="  lg:w-1/2">
           <div className="  flex justify-center lg:p-8">
           <motion.img
-  src={profile}
+  src="https://img.freepik.com/premium-photo/anime-programmer-working-code_1282444-264422.jpg"
   alt="profile image"
   className="w-96  h-96 rounded-3xl border border-stone-900"
   initial={{ x: 100, opacity: 0 }}
