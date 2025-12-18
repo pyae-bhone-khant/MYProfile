@@ -9,7 +9,7 @@ const Navbar = () => {
           aria-label="Home"
           className="font-serif text-4xl font-bold text-white"
         >
-          Pyae Bhone Khant 
+          PBK
         </a>
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
