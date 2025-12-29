@@ -3,10 +3,7 @@ import project1 from "../assets/projects/project1.png"
 import project5 from "../assets/projects/project5.png"
 import project6 from "../assets/projects/project6.png"
 import project7 from "../assets/projects/project7.png"
-
-
-
-
+import project8 from "../assets/projects/project8.png"
 
 
 
@@ -87,6 +84,14 @@ export const PROJECTS = [
       "The project is not finished yet: I'm still working on it",
     technologies: ["Tailwind", "React", "Express", "MongoDB"],
     demo: "https://learningweb12.netlify.app",
+  },
+  {
+    title: "CookCraft",
+    image: project8,
+    description:
+      "The project is not finished yet: I'm still working on it",
+    technologies: ["Nextjs", "Tailwinds", "Shadcn ui", ],
+    demo: "https://cookcraft-omega.vercel.app/",
   },
 
 
