@@ -1,9 +1,10 @@
 
-import project1 from "../assets/projects/project1.png"
 import project5 from "../assets/projects/project5.png"
 import project6 from "../assets/projects/project6.png"
 import project7 from "../assets/projects/project7.png"
 import project8 from "../assets/projects/project8.png"
+import project9 from "../assets/projects/project9.png"
+
 
 
 
@@ -46,26 +47,13 @@ export const EXPERIENCES = [
 ];
 
 export const PROJECTS = [
-  {
-    title: "My Profile Website",
-    image: project1,
-    description:
-      "A personal portfolio website showcasing my skills, projects, and experience. Built with modern web technologies, it features a clean design, responsive layout, and smooth navigation to highlight my work effectively.",
-    technologies: [
-
-      "React",
-      "Tailwind",
-      "React-router",
-      "framer animation"
-    ],
-    demo: "#",
-  },
+ 
 
   {
     title: "Fairway clone",
     image: project5,
     description:
-      "The project is not finished yet: I'm still working on it",
+      "A full-stack Fairway website clone featuring responsive layouts and dynamic functionality. Still under active development.",
     technologies: ["Tailwind", "React", "Express", "MongoDB"],
     demo: "https://fireway-clone.netlify.app",
   },
@@ -73,7 +61,7 @@ export const PROJECTS = [
     title: "FashionWebsite",
     image: project6,
     description:
-      "The project is not finished yet: I'm still working on it",
+      "A fashion e-commerce website built with React and Tailwind CSS. Currently under development.",
     technologies: ["Tailwind", "React"],
     demo: "https://fashionshop-12.netlify.app",
   },
@@ -81,7 +69,7 @@ export const PROJECTS = [
     title: "LearningWeb",
     image: project7,
     description:
-      "The project is not finished yet: I'm still working on it",
+      "A learning platform featuring interactive content and a user-friendly experience. Still under development.A learning platform featuring interactive content and a user-friendly experience. Still under development.",
     technologies: ["Tailwind", "React", "Express", "MongoDB"],
     demo: "https://learningweb12.netlify.app",
   },
@@ -89,9 +77,17 @@ export const PROJECTS = [
     title: "CookCraft",
     image: project8,
     description:
-      "The project is not finished yet: I'm still working on it",
+      "A modern cooking platform for exploring recipes and food ideas. Still under active development.",
     technologies: ["Nextjs", "Tailwinds", "Shadcn ui", ],
     demo: "https://cookcraft-omega.vercel.app/",
+  },
+  {
+    title: "TMDB MOVIE",
+    image: project9,
+    description:
+      "A movie discovery platform that allows users to explore popular, trending, and detailed movie information. Currently under development.",
+    technologies: ["Nextjs", "Tailwinds", "Shadcn ui", ],
+    demo: "https://tmdb-movie-pi.vercel.app/",
   },
 
 
