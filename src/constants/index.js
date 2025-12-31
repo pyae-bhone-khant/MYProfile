@@ -75,7 +75,7 @@ export const PROJECTS = [
     image: project8,
     description:
       "A modern cooking platform for exploring recipes and food ideas. Still under active development.",
-    technologies: ["Nextjs", "Tailwinds", "Shadcn ui", ],
+    technologies: ["Nextjs", "Tailwinds", "Shadcn ui", "laravel api" ],
     demo: "https://cookcraft-omega.vercel.app/",
   },
   {
