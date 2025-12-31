@@ -5,9 +5,6 @@ import project7 from "../assets/projects/project7.png"
 import project8 from "../assets/projects/project8.png"
 import project9 from "../assets/projects/project9.png"
 
-
-
-
 export const HERO_CONTENT = `I am self-taught passionate full stack  developer with a strong sense of responsibility
 and organization.I am passionate about modern web
 development and have developed skills in creating web applications
@@ -86,7 +83,7 @@ export const PROJECTS = [
     image: project9,
     description:
       "A movie discovery platform that allows users to explore popular, trending, and detailed movie information. Currently under development.",
-    technologies: ["Nextjs", "Tailwinds", "Shadcn ui", ],
+    technologies: ["Nextjs", "Tailwinds", "Shadcn ui" , "TMDB API", ],
     demo: "https://tmdb-movie-pi.vercel.app/",
   },
 
