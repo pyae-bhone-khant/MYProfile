@@ -7,7 +7,7 @@ const Navbar = () => {
         <a
           href="/"
           aria-label="Home"
-          className="font-serif text-4xl font-bold text-white"
+          className="font-serif text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent hover:from-purple-300 hover:to-blue-300 transition-all duration-300"
         >
           PBK
         </a>
@@ -18,6 +18,7 @@ const Navbar = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Linkedin"
+          className="text-gray-400 hover:text-purple-400 transition-colors duration-300 hover:scale-110"
         >
           <FaLinkedin />
         </a>
@@ -26,6 +27,7 @@ const Navbar = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Github"
+          className="text-gray-400 hover:text-blue-400 transition-colors duration-300 hover:scale-110"
         >
           <FaGithub />
         </a>
@@ -34,6 +36,7 @@ const Navbar = () => {
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Facebook"
+          className="text-gray-400 hover:text-purple-400 transition-colors duration-300 hover:scale-110"
         >
           <FaFacebook />
         </a>
@@ -41,7 +44,8 @@ const Navbar = () => {
           href="https://t.me/Pyae_123445"
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="Instagram"
+          aria-label="Telegram"
+          className="text-gray-400 hover:text-blue-400 transition-colors duration-300 hover:scale-110"
         >
           <FaTelegramPlane />
         </a>

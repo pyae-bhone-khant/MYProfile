@@ -28,7 +28,7 @@ const Technologies = () => {
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
         transition={{ duration: 1.5 }}
-        className="my-20 text-center text-4xl"
+        className="my-20 text-center text-4xl bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent"
       >
         Technologies
       </motion.h2>
@@ -44,7 +44,7 @@ const Technologies = () => {
           variants={iconVariants(2.5)}
           className="p-4"
         >
-          <IoLogoJavascript className="text-yellow-500" />
+          <IoLogoJavascript className="text-yellow-400" />
         </motion.div>
         <motion.div
           initial="initial"
@@ -59,7 +59,7 @@ const Technologies = () => {
           variants={iconVariants(5)}
           className="p-4"
         >
-          <TbBrandNextjs />
+          <TbBrandNextjs className="text-gray-300" />
         </motion.div>
         <motion.div
           initial="initial"
@@ -67,7 +67,7 @@ const Technologies = () => {
           variants={iconVariants(2)}
           className="p-4"
         >
-          <FaNodeJs className="text-[#417E38]" />
+          <FaNodeJs className="text-green-500" />
         </motion.div>
         <motion.div
           initial="initial"
@@ -75,7 +75,7 @@ const Technologies = () => {
           variants={iconVariants(2.5)}
           className="p-4"
         >
-          <SiExpress />
+          <SiExpress className="text-gray-300" />
         </motion.div>
         <motion.div
           initial="initial"
@@ -91,7 +91,7 @@ const Technologies = () => {
           variants={iconVariants(4)}
           className="p-4"
         >
-          <BiLogoPostgresql className="text-[#336791]" />
+          <BiLogoPostgresql className="text-blue-400" />
         </motion.div>
         <motion.div
           initial="initial"
@@ -107,7 +107,7 @@ const Technologies = () => {
           variants={iconVariants(3.5)}
           className="p-4"
         >
-          <SiPrisma />
+          <SiPrisma className="text-gray-300" />
         </motion.div>
         <motion.div
           initial="initial"
@@ -115,13 +115,13 @@ const Technologies = () => {
           variants={iconVariants(4)}
           className="p-4"
         >
-          <VscGithubInverted />
+          <VscGithubInverted className="text-gray-300" />
         </motion.div>
         <motion.div
           initial="initial"
           animate="animate"
           variants={iconVariants(4)}
-          className="p-4 text-[#38BDF8]"
+          className="p-4 text-cyan-400"
         >
           <RiTailwindCssFill />
         </motion.div>

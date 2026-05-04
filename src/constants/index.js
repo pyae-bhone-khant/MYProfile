@@ -45,15 +45,6 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
  
-
-  {
-    title: "Fairway clone",
-    image: project5,
-    description:
-      "A full-stack Fairway website clone featuring responsive layouts and dynamic functionality. Still under active development.",
-    technologies: ["Tailwind", "React", "Express", "MongoDB"],
-    demo: "https://fireway-clone.netlify.app",
-  },
   {
     title: "FashionWebsite",
     image: project6,
@@ -62,22 +53,7 @@ export const PROJECTS = [
     technologies: ["Tailwind", "React"],
     demo: "https://fashionshop-12.netlify.app",
   },
-  {
-    title: "LearningWeb",
-    image: project7,
-    description:
-      "A learning platform featuring interactive content and a user-friendly experience. Still under development.A learning platform featuring interactive content and a user-friendly experience. Still under development.",
-    technologies: ["Tailwind", "React", "Express", "MongoDB"],
-    demo: "https://learningweb12.netlify.app",
-  },
-  {
-    title: "CookCraft",
-    image: project8,
-    description:
-      "A modern cooking platform for exploring recipes and food ideas. Still under active development.",
-    technologies: ["Nextjs", "Tailwinds", "Shadcn ui", "laravel api" ],
-    demo: "https://cookcraft-omega.vercel.app/",
-  },
+
   {
     title: "TMDB MOVIE",
     image: project9,

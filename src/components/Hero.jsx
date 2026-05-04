@@ -25,7 +25,7 @@ const Hero = () => {
           <motion.img
   src="https://img.freepik.com/premium-photo/anime-programmer-working-code_1282444-264422.jpg"
   alt="profile image"
-  className="w-96  h-96 rounded-3xl border border-stone-900"
+  className="w-96  h-96 rounded-3xl border border-gray-700"
   initial={{ x: 100, opacity: 0 }}
   animate={{ x: 0, opacity: 1 }}
   transition={{ duration: 1, delay: 1.5 }}
@@ -41,19 +41,19 @@ const Hero = () => {
           >
             <motion.h2
               variants={childVariants}
-              className="pb-2 text-6xl tracking-tighter font-bold  text-sky-400"
+              className="pb-2 text-6xl tracking-tighter font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent"
             >
               Pyae Bhone Khant
             </motion.h2>
             <motion.span
               variants={childVariants}
-              className="bg-gradient-to-r from-stone-300 to-stone-600 bg-clip-text text-3xl tracking-tight text-transparent"
+              className="bg-gradient-to-r from-gray-300 to-gray-400 bg-clip-text text-3xl tracking-tight text-transparent"
             >
               Web Developer
             </motion.span>
             <motion.p
               variants={childVariants}
-              className="my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter"
+              className="my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter text-gray-300"
             >
               {HERO_CONTENT}
             </motion.p> 
@@ -65,7 +65,7 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               download
-              className="mb-10 rounded-full bg-white p-4 text-sm text-stone-800"
+              className="mb-10 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 p-4 text-sm text-white hover:from-purple-700 hover:to-blue-700 transition-all duration-300"
             >
               Download Resume
             </motion.a> 
@@ -75,7 +75,7 @@ const Hero = () => {
               target="_blank"
               rel="noopener noreferrer"
               download
-              className="mb-10 rounded-full bg-gray-400 hover:bg-green-400 p-4 text-sm text-white"
+              className="mb-10 rounded-full bg-gray-600 hover:bg-purple-600 p-4 text-sm text-white transition-colors duration-300"
             >
               Download Cover letter
             </motion.a>

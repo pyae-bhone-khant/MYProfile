@@ -8,11 +8,19 @@ function App() {
   return (
     <div className="overflow-x-hidden text-stone-300 antialiased">
       <div className="fixed inset-0 -z-10">
-        <div className="min-h-screen  w-screen bg-cover bg-center relative text-gray-200" 
-             style={{ backgroundImage: "url('/img/bgn.png')" }}
-        >
-        
-          <div className="absolute left-0 right-0 top-[-10%] h-[1000px] w-[1000px] rounded-full "></div>
+        <div className="animated-bg"></div>
+        <div className="particles">
+          {[...Array(20)].map((_, i) => (
+            <div
+              key={i}
+              className="particle"
+              style={{
+                left: `${Math.random() * 100}%`,
+                animationDelay: `${Math.random() * 20}s`,
+                animationDuration: `${15 + Math.random() * 10}s`
+              }}
+            />
+          ))}
         </div>
       </div>
 
