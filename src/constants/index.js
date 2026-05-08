@@ -98,7 +98,7 @@ export const PROJECTS = [
 ];
 
 export const CONTACT = {
-  address: "7E JLN Baiduri Off JLN San Peng, 55200 ,Kuala Lumpur",
+  address: "Hlaing Township, Yangon, Myanmar",
   phoneNo: "+959 982 4255 19 ",
   email: "pyaebhonen4@gmail.com",
 };
