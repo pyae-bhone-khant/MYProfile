@@ -22,7 +22,7 @@ const childVariants = {
 
 const Hero = () => {
   return (
-    <div className="pb-4  pl-10 lg:mb-36">
+    <div className="pb-4  pl-10 lg:mb-8">
       <div className="flex flex-wrap lg:flex-row-reverse">
         <div className=" flex flex-col items-center lg:w-1/2">
           <div className="flex justify-center lg:p-8">

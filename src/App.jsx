@@ -1,3 +1,4 @@
+import About from "./components/About";
 import Contact from "./components/Contact";
 import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
@@ -27,7 +28,11 @@ function App() {
       <div className="container mx-auto px-8 md:px-16 ">
         <Navbar />
         <Hero />
+        <div className="border w-full border-gray-800"></div>
+        <About />
+        <div className="border w-full border-gray-800"></div>
         <Technologies />
+        <div className="border w-full border-gray-800"></div>
         <Projects />
         <Contact />
       </div>
