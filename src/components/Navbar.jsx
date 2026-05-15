@@ -2,17 +2,18 @@ import { FaFacebook, FaGithub, FaTelegramPlane, FaLinkedin } from "react-icons/f
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between py-6">
+    <nav className="flex items-center justify-between px-10 mt-10 py-6">
       <div className="flex flex-shrink-0 items-center">
         <a
           href="/"
           aria-label="Home"
-          className="font-serif text-4xl font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent hover:from-purple-300 hover:to-blue-300 transition-all duration-300"
+          className="font-serif text-sm font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent hover:from-purple-300 hover:to-blue-300 transition-all duration-300"
         >
-          PBK
+         <span className="text-white"> Hi, I'm </span> <span className="ml-2"> Pyae Bhone Khant </span> <br />
+          <span className="text-gray-400"> Full-stack developer crafting thoughtful web products.</span>
         </a>
       </div>
-      <div className="m-8 flex items-center justify-center gap-4 text-2xl">
+      <div className="m-8 flex items-center justify-center gap-4 text-4xl">
         <a
          href="https://www.linkedin.com/in/pyae-bhone-naing-b87292387"
           target="_blank"

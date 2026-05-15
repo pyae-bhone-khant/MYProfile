@@ -24,7 +24,7 @@ function App() {
         </div>
       </div>
 
-      <div className="container mx-auto px-8">
+      <div className="container mx-auto px-8 md:px-16 ">
         <Navbar />
         <Hero />
         <Technologies />
