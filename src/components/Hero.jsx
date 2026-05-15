@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-
+import profileImage from "../assets/profile.jpg";
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -27,7 +27,7 @@ const Hero = () => {
         <div className=" flex flex-col items-center lg:w-1/2">
           <div className="flex justify-center lg:p-8">
             <motion.img
-              src="/src/assets/profile.jpg"
+              src={profileImage}
               alt="profile image"
               className="w-96 h-auto rounded-3xl border border-gray-700"
               initial={{ x: 50, opacity: 0 }} // Image ကိုလည်း x offset လျှော့ထားပါတယ်
