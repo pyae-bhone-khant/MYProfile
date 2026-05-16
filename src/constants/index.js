@@ -8,9 +8,6 @@ import project10 from "../assets/projects/project10.png"
 import project11 from "../assets/projects/project11.png"
 import project12 from "../assets/projects/project12.png"
 
-
-
-
 export const HERO_CONTENT = `I am self-taught passionate full stack  developer with a strong sense of responsibility
 and organization.I am passionate about modern web
 development and have developed skills in creating web applications
@@ -56,7 +53,9 @@ export const PROJECTS = [
     description:
       "A social media platform for connecting with friends and sharing updates. Currently under development.",
     technologies: ["Shadcn", "Next.js" , "Express.js" , "Prisma ORM" , "PostgreSQL"],
-    demo: "https://github.com/pyae-bhone-khant/Zaya-social-api.git",
+    // demo: "https://github.com/pyae-bhone-khant/Zaya-social-api.git",
+    github: "https://github.com/pyae-bhone-khant/Zaya-social-api.git",
+    category: "platform"
   },
    {
     title: "Zaya Note",
@@ -64,7 +63,9 @@ export const PROJECTS = [
     description:
       "A note-taking application for organizing thoughts and ideas. Currently under development.",
     technologies: ["Shadcn", "Next.js" , "Express.js" , "Prisma ORM" , "Neon PostgreSQL"],
-    demo: "https://github.com/pyae-bhone-khant/Note-api.git",
+    // demo: "https://github.com/pyae-bhone-khant/Note-api.git",
+    github: "https://github.com/pyae-bhone-khant/Note-api.git",
+    category: "platform"
   },
    {
     title: "Furnicture",
@@ -72,7 +73,9 @@ export const PROJECTS = [
     description:
       "An e-commerce website for buying and selling furniture. Currently under development.",
     technologies: ["Shadcn", "Next.js" , "Express.js" , "Prisma ORM" , "PostgreSQL"],
-    demo: "https://github.com/pyae-bhone-khant/furnicture-api.git",
+    // demo: "https://github.com/pyae-bhone-khant/furnicture-api.git",
+    github: "https://github.com/pyae-bhone-khant/furnicture-api.git",
+    category: "ecommerce"
   },
  
   {
@@ -82,6 +85,8 @@ export const PROJECTS = [
       "A fashion e-commerce website built with React and Tailwind CSS. Currently under development.",
     technologies: ["Tailwind", "React"],
     demo: "https://fashionshop-12.netlify.app",
+    github: "https://github.com/pyae-bhone-khant/fashionshop-12.git",
+    category: "ecommerce"
   },
 
   {
@@ -91,10 +96,9 @@ export const PROJECTS = [
       "A movie discovery platform that allows users to explore popular, trending, and detailed movie information. Currently under development.",
     technologies: ["Nextjs", "Tailwinds", "Shadcn ui" , "TMDB API", ],
     demo: "https://tmdb-movie-pi.vercel.app/",
+    github: "https://github.com/pyae-bhone-khant/tmdb-movie.git",
+    category: "platform"
   },
-
-
-
 ];
 
 export const CONTACT = {

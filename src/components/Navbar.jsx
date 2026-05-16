@@ -2,7 +2,7 @@ import { FaFacebook, FaGithub, FaTelegramPlane, FaLinkedin } from "react-icons/f
 
 const Navbar = () => {
   return (
-    <nav className="flex items-center justify-between px-10 mt-10 py-6">
+    <nav className="flex items-center justify-between px-10 py-6">
       <div className="flex flex-shrink-0 items-center">
         <a
           href="/"

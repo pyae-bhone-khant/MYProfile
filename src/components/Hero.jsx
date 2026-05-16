@@ -1,5 +1,7 @@
 import { motion } from "framer-motion";
 import profileImage from "../assets/profile.jpg";
+import { MoveUpRight } from 'lucide-react';
+import { ArrowDownToLine } from 'lucide-react';
 const containerVariants = {
   hidden: { opacity: 0 },
   visible: {
@@ -107,15 +109,17 @@ const Hero = () => {
             <motion.div variants={childVariants} className="flex gap-2">
               <a
                 href="/PyaeBhoneKhant.pdf"
-                className="mb-10 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 p-4 text-2xl text-white hover:from-purple-700 hover:to-blue-700 transition-all duration-300"
+                className="mb-10  flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 p-4 text-2xl text-white hover:from-purple-700 hover:to-blue-700 transition-all duration-300"
               >
-                Explore Project
+                <span>Explore Project</span>
+                <MoveUpRight />
               </a>
               <a
                 href="/PyaeBhoneKhant(CL).pdf"
-                className="mb-10 rounded-full bg-gray-600 hover:bg-purple-600 p-4 text-2xl text-white transition-colors duration-300"
-              >
-                View GitHub
+                className="mb-10  flex items-center gap-2 rounded-full bg-gray-600 hover:bg-purple-600 p-4 text-2xl text-white transition-colors duration-300"
+              >  
+              <span>View GitHub</span>
+               <ArrowDownToLine />
               </a>
             </motion.div>
           </motion.div>

@@ -1,10 +1,14 @@
+"use client"
+
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 import { PROJECTS } from "../constants";
 
-const Projects = () => {
+const Projects = () => { 
+  const [selectedCategory, setSelectedCategory] = useState("all");
   return (
-    <div className="pb-4">
+    <div className="pb-4 ">
       <motion.h2
         whileInView={{ opacity: 1, y: 0 }}
         initial={{ opacity: 0, y: -100 }}
@@ -42,13 +46,13 @@ const Projects = () => {
               <div className="mb-2 flex items-center justify-between">
                 <h3 className="text-2xl font-semibold text-white">{project.title}</h3>
                 <a
-                  href={project.demo}
+                  href={project.demo || project.github}
                   className="rounded bg-gradient-to-r from-purple-600 to-blue-600 p-2 text-sm font-medium text-white hover:from-purple-700 hover:to-blue-700 transition-all duration-300"
                   target="_blank"
                   rel="noopener noreferrer"
                   aria-label="project link"
-                >
-                  View Now
+                > 
+                 {project.demo ? "View Demo" : "View Code"}
                 </a>
               </div>
               <p className="mb-4 text-gray-400">{project.description}</p>

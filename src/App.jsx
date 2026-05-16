@@ -25,16 +25,26 @@ function App() {
         </div>
       </div>
 
-      <div className="container mx-auto px-8 md:px-16 ">
+      <div className="container mx-auto px-8 lg:pt-20 md:px-16 ">
+        <section id="home" className="scroll-mt-24">
         <Navbar />
         <Hero />
+        </section>
         <div className="border w-full border-gray-800"></div>
+        <section id="about" className="scroll-mt-24">
         <About />
+        </section>
         <div className="border w-full border-gray-800"></div>
+        <section id="technologies" className="scroll-mt-24">
         <Technologies />
+        </section>
         <div className="border w-full border-gray-800"></div>
+        <section id="projects" className="scroll-mt-24">
         <Projects />
+        </section>
+        <section id="contact" className="scroll-mt-24">
         <Contact />
+        </section>
       </div>
     </div>
   );
