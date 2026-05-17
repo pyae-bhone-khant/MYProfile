@@ -1,7 +1,15 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+// Icon Layout အတွက် Lucide React ကို သုံးထားပါတယ် (npm i lucide-react)
+import { Home, User, Code, Briefcase, Mail } from "lucide-react";
 
-const navItems = ["Home", "About", "Technologies", "Projects", "Contact"];
+const navItems = [
+  { name: "Home", icon: Home },
+  { name: "About", icon: User },
+  { name: "Technologies", icon: Code },
+  { name: "Projects", icon: Briefcase },
+  { name: "Contact", icon: Mail },
+];
 
 export default function Navbar() {
   const [activeTab, setActiveTab] = useState("Home");
@@ -17,48 +25,73 @@ export default function Navbar() {
   // Scroll Logic
   useEffect(() => {
     const handleScroll = () => {
-      const scrollOffset = window.innerHeight / 3; 
+      const scrollOffset = window.innerHeight / 3;
 
       for (const item of navItems) {
-        const element = document.getElementById(item.toLowerCase());
-        
+        const element = document.getElementById(item.name.toLowerCase());
+
         if (element) {
           const rect = element.getBoundingClientRect();
-          
+
           if (rect.top <= scrollOffset && rect.bottom >= scrollOffset) {
-            setActiveTab(item);
-            break; 
+            setActiveTab(item.name);
+            break;
           }
         }
       }
     };
 
     window.addEventListener("scroll", handleScroll);
-    handleScroll(); 
+    handleScroll();
 
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
   return (
-    // မျက်နှာပြင်အလယ်မှာ အနေတော် အရွယ်အစား ဖြစ်စေဖို့ top-6 နဲ့ px-4 ပြန်ညှိထားပါတယ်
-    <div className="fixed top-6 left-0 right-0 flex justify-center z-50 px-4">
-      {/* UI ပြင်ဆင်ချက် -
-        - px-2 py-1.5 နဲ့ အမြင့်/အကျယ်ကို အလတ်စား (Medium) ပြန်လုပ်ထားပါတယ်
-        - gap-1 ပဲ ထားပြီး ခလုတ်တွေ စနစ်တကျ ကပ်နေအောင် စီစဉ်ထားပါတယ်
+    /* 
+      Responsiveness ပြင်ဆင်မှု -
+      - Mobile (Default): ဘယ်ဘက် (သို့) ညာဘက်ဘေးမှာ ကပ်ထားမယ် (fixed left-4 top-1/2 -translate-y-1/2)
+      - Desktop (md:): အပေါ်အလယ်မှာ ပြန်ပြမယ် (md:top-6 md:left-0 md:right-0 md:translate-y-0)
+    */
+    <div className="fixed z-50 left-4 top-1/2 -translate-y-1/2 flex flex-col justify-center items-center md:top-6 md:left-0 md:right-0 md:translate-y-0 md:flex-row md:px-4">
+      
+      {/* 
+        Nav Layout ပြင်ဆင်မှု -
+        - Mobile: flex-col (ဒေါင်လိုက်)၊ ပတ်ပတ်လည် p-3 
+        - Desktop (md:): flex-row (အလျားလိုက်)၊ px-2 py-1.5
       */}
-      <nav className="flex items-center gap-1 bg-[#090d16]/70 backdrop-blur-md border border-gray-800/60 px-2 py-1.5 rounded-full shadow-xl">
+      <nav className="flex flex-col md:flex-row items-center gap-3 md:gap-1 bg-[#090d16]/70 backdrop-blur-md border border-gray-800/60 p-3 md:px-2 md:py-1.5 rounded-full shadow-xl">
         {navItems.map((item) => {
-          const isActive = activeTab === item;
+          const isActive = activeTab === item.name;
+          const Icon = item.icon;
+
           return (
             <button
-              key={item}
-              onClick={() => handleScrollToSection(item)}
-              // w-24 သို့မဟုတ် w-28 ပေးခြင်းဖြင့် Item တိုင်းရဲ့ Width ကို ကွက်တိ ညီညာစေပါတယ်
-              className={`relative w-24 md:w-28 py-2 text-xs md:text-sm font-medium text-center rounded-full transition-colors duration-300 z-10 whitespace-nowrap ${
-                isActive ? "text-black" : "text-stone-400 hover:text-white"
-              }`}
+              key={item.name}
+              onClick={() => handleScrollToSection(item.name)}
+              /* 
+                Button Size ညှိနှိုင်းမှု -
+                - Mobile: icon သီးသန့်မို့ width/height တူတူပဲ ပေးထားပါတယ် (w-11 h-11)
+                - Desktop (md:): စာသားပြန်ပြမှာမို့ အလျားလိုက် width ပြန်ပေးထားပါတယ် (md:w-28 md:h-auto)
+              */
+              className={`relative w-11 h-11 md:w-28 md:h-auto md:py-2 flex items-center justify-center text-xs md:text-sm font-medium rounded-full transition-colors duration-300 z-10 group`}
             >
-              {item}
+              {/* Mobile မှာပြမယ့် Icon */}
+              <span className="block md:hidden">
+                <Icon size={20} className={`${isActive ? "text-black" : "text-stone-400 group-hover:text-white"}`} />
+              </span>
+
+              {/* Desktop မှာပြမယ့် စာသား (Text) */}
+              <span className={`hidden md:block whitespace-nowrap ${isActive ? "text-black" : "text-stone-400 hover:text-white"}`}>
+                {item.name}
+              </span>
+
+              {/* Tooltip - Mobile မှာ Icon ပေါ်တင်ရင် နာမည်လေး ပြပေးဖို့ (Optional) */}
+              <span className="absolute left-14 bg-gray-900 text-white text-xs px-2 py-1 rounded opacity-0 pointer-events-none group-hover:opacity-100 transition-opacity duration-200 block md:hidden shadow-md border border-gray-800">
+                {item.name}
+              </span>
+
+              {/* Framer Motion Active Pill Background */}
               {isActive && (
                 <motion.div
                   layoutId="active-pill"

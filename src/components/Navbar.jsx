@@ -3,11 +3,11 @@ import { FaFacebook, FaGithub, FaTelegramPlane, FaLinkedin } from "react-icons/f
 const Navbar = () => {
   return (
     <nav className="flex items-center justify-between px-10 py-6">
-      <div className="flex flex-shrink-0 items-center">
+      <div className="flex shrink-0 items-center">
         <a
           href="/"
           aria-label="Home"
-          className="font-serif text-sm font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent hover:from-purple-300 hover:to-blue-300 transition-all duration-300"
+          className="font-serif text-sm font-bold bg-linear-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent hover:from-purple-300 hover:to-blue-300 transition-all duration-300"
         >
          <span className="text-white"> Hi, I'm </span> <span className="ml-2"> Pyae Bhone Khant </span> <br />
           <span className="text-gray-400"> Full-stack developer crafting thoughtful web products.</span>

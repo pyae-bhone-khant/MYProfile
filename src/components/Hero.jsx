@@ -60,14 +60,14 @@ const Hero = () => {
           >
             <motion.h2
               variants={childVariants}
-              className="pb-2 text-6xl tracking-tighter font-bold bg-gradient-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent"
+              className="pb-2 text-6xl tracking-tighter font-bold bg-linear-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent"
             >
               Pyae Bhone Khant
             </motion.h2>
 
             <motion.span
               variants={childVariants}
-              className="bg-gradient-to-r mt-8 from-gray-300 to-gray-400 bg-clip-text text-7xl tracking-tight text-transparent"
+              className="bg-linear-to-r mt-8 from-gray-300 to-gray-400 bg-clip-text text-7xl tracking-tight text-transparent"
             >
               Building polished web experiences with full-stack depth.
             </motion.span>
@@ -86,7 +86,7 @@ const Hero = () => {
                 className="group relative overflow-hidden text-2xl rounded-xl border border-white/10 bg-white/5 px-6 py-4 text-slate-300 transition-all hover:border-white/30 hover:text-white"
               >
                 <span className="relative z-10">9+ <br /> Shipped projects</span>
-                <div className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-900/20 to-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="absolute inset-0 -z-10 bg-linear-to-r from-purple-900/20 to-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity" />
               </a>
 
               <a
@@ -94,7 +94,7 @@ const Hero = () => {
                 className="group relative overflow-hidden text-2xl rounded-xl border border-white/10 bg-white/5 px-6 py-4 text-slate-300 transition-all hover:border-white/30 hover:text-white"
               >
                 <span className="relative z-10">2 <br /> Product teams</span>
-                <div className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-900/20 to-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="absolute inset-0 -z-10 bg-linear-to-r from-purple-900/20 to-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity" />
               </a>
 
               <a
@@ -102,14 +102,14 @@ const Hero = () => {
                 className="group relative overflow-hidden text-2xl rounded-xl border border-white/10 bg-white/5 px-6 py-4 text-slate-300 transition-all hover:border-white/30 hover:text-white"
               >
                 <span className="relative z-10">Full stack <br /> UI to APIs</span>
-                <div className="absolute inset-0 -z-10 bg-gradient-to-r from-purple-900/20 to-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity" />
+                <div className="absolute inset-0 -z-10 bg-linear-to-r from-purple-900/20 to-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity" />
               </a>
             </motion.div>
 
             <motion.div variants={childVariants} className="flex gap-2">
               <a
                 href="/PyaeBhoneKhant.pdf"
-                className="mb-10  flex items-center gap-2 rounded-full bg-gradient-to-r from-purple-600 to-blue-600 p-4 text-2xl text-white hover:from-purple-700 hover:to-blue-700 transition-all duration-300"
+                className="mb-10  flex items-center gap-2 rounded-full bg-linear-to-r from-purple-600 to-blue-600 p-4 text-2xl text-white hover:from-purple-700 hover:to-blue-700 transition-all duration-300"
               >
                 <span>Explore Project</span>
                 <MoveUpRight />
