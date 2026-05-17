@@ -115,7 +115,9 @@ const Hero = () => {
                 <MoveUpRight />
               </a>
               <a
-                href="/PyaeBhoneKhant(CL).pdf"
+                href="https://github.com/pyae-bhone-khant"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="mb-10  flex items-center gap-2 rounded-full bg-gray-600 hover:bg-purple-600 p-4 text-2xl text-white transition-colors duration-300"
               >  
               <span>View GitHub</span>

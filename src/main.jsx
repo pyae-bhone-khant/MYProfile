@@ -3,11 +3,15 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import SmartNavbar from './components/MainNav.jsx'
+import CustomCursor from './components/CustomCursor.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <SmartNavbar />
-    <App />
+    <div className=''>
+      <CustomCursor />
+      <SmartNavbar />
+      <App />
+    </div>
     
   </StrictMode>
 )
