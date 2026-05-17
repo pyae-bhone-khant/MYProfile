@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Technologies from "./components/Technologies";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -45,6 +46,9 @@ function App() {
         <section id="contact" className="scroll-mt-24">
         <Contact />
         </section>
+        <footer>
+        <Footer />
+        </footer>
       </div>
     </div>
   );
