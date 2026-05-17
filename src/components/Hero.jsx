@@ -57,27 +57,59 @@ const Hero = () => {
             animate="visible"
             variants={containerVariants}
             className="mt-10 flex flex-col items-center lg:items-start"
-          >
-            <motion.h2
-              variants={childVariants}
-              className="pb-2 text-6xl tracking-tighter font-bold bg-linear-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent"
-            >
-              Pyae Bhone Khant
-            </motion.h2>
+          > 
+          <motion.div  
+           variants={childVariants}
+           className="inline-flex items-center gap-2.5 px-5 py-2.5   shadow-lg  shadow-[#00cce6]/30 rounded-full border border-[#00cce6]/30 bg-[#04121a] shadow-[inset_0_1px_12px_rgba(0,204,230,0.05)]">
+      {/* Sparkle Icon */}
+      <svg
+        className="w-4 h-4 text-[#00cce6]"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        viewBox="0 0 24 24"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M9.813 15.904L9 21L8.188 15.904L3.102 15L8.188 14.096L9 9L9.813 14.096L14.898 15L9.813 15.904Z"
+        />
+        <path
+          strokeLinecap="round"
+          strokeLinejoin="round"
+          d="M19.071 4.929l-.395 2.449-.396-2.449-2.449-.395 2.449-.396.396-2.449.395 2.449 2.449.396-2.449.395z"
+        />
+      </svg>
 
+      {/* Text */}
+      <span className="text-sm font-normal tracking-wide text-[#00cce6] font-['Inter']">
+        Available for product-focused full-stack work
+      </span>
+    </motion.div>
             <motion.span
               variants={childVariants}
-              className="bg-linear-to-r mt-8 from-gray-300 to-gray-400 bg-clip-text text-7xl tracking-tight text-transparent"
+              className="bg-linear-to-r mt-4 from-gray-300 to-gray-400 bg-clip-text text-7xl tracking-tight text-transparent"
             >
               Building polished web experiences with full-stack depth.
             </motion.span>
-
+        
+            <div className="flex flex-col mt-6">
+            <motion.h2
+              variants={childVariants}
+              className=" nt-8 text-2xl tracking-tighter font-bold bg-linear-to-r from-purple-400 to-blue-400 bg-clip-text text-transparent"
+            > 
+            <div className="flex gap-4">
+           <span>PYAE </span>  <span>BHONE</span> <span>KHANT</span> <span>.</span> <span>FULL</span> <span>STACK</span> <span>DEVELOPER</span>
+            </div>
+            </motion.h2>
             <motion.p
               variants={childVariants}
-              className="my-2 max-w-lg py-6 text-xl leading-relaxed tracking-tighter text-gray-300"
+              className="my-2 max-w-lg py-4 text-xl leading-relaxed tracking-tighter text-gray-300"
             >
             I build responsive, scalable web apps with React, Next.js, Node.js, and MySQL. I care about clean product experiences, reliable backend architecture, and turning ideas into polished features that people actually enjoy using.
             </motion.p>
+            </div>
             
             {/* Card အုပ်စု - ဒီနေရာမှာ အကုန်လုံး တစ်ပြိုင်တည်း ပေါ်စေချင်ရင် containerVariants ထဲက stagger ကို လျှော့သုံးတာ ပိုကောင်းပါတယ် */}
             <motion.div variants={childVariants} className="flex flex-wrap gap-4 mb-10">
