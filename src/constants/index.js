@@ -20,8 +20,8 @@ export const EXPERIENCES = [
     role: " Full Stack Developer (OJT)",
     company: "Untimake Solutions",
     description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
-  },
+    technologies: ["Javascript", "React.js", "Next.js",  "NestJS",  "prisma", "neon Postgres", "mongoDB"],
+  }, 
 
    {
     year: "2026-present",
@@ -33,148 +33,15 @@ export const EXPERIENCES = [
  
 ];
 
-// export const PROJECTS = [
-
-//   {
-//     title: "Zaya Social",
-
-//     image: project12,
-
-//     shortDescription: "Modern social platform with realtime interactions.",
-
-//     description:
-//       "A social media platform for connecting with friends and sharing updates. Currently under development.",
-
-//     technologies: [
-//       "Shadcn",
-//       "Next.js",
-//       "Express.js",
-//       "Prisma ORM",
-//       "PostgreSQL",
-//     ],
-
-//     github: "https://github.com/pyae-bhone-khant/Zaya-social-api.git",
-
-//     category: "platform",
-
-//     status: "In Progress",
-
-//     featured: true,
-//   },
-
-//   {
-//     title: "Zaya Note",
-
-//     image: project11,
-
-//     shortDescription: "Clean and minimal note-taking productivity app.",
-
-//     description:
-//       "A note-taking application for organizing thoughts and ideas. Currently under development.",
-
-//     technologies: [
-//       "Shadcn",
-//       "Next.js",
-//       "Express.js",
-//       "Prisma ORM",
-//       "Neon PostgreSQL",
-//     ],
-
-//     github: "https://github.com/pyae-bhone-khant/Note-api.git",
-
-//     category: "platform",
-
-//     status: "In Progress",
-
-//     featured: false,
-//   },
-
-//   {
-//     title: "Furnicture",
-
-//     image: project10,
-
-//     shortDescription: "Furniture e-commerce platform with modern UI.",
-
-//     description:
-//       "An e-commerce website for buying and selling furniture. Currently under development.",
-
-//     technologies: [
-//       "Shadcn",
-//       "Next.js",
-//       "Express.js",
-//       "Prisma ORM",
-//       "PostgreSQL",
-//     ],
-
-//     github: "https://github.com/pyae-bhone-khant/furnicture-api.git",
-
-//     category: "ecommerce",
-
-//     status: "In Progress",
-
-//     featured: true,
-//   },
-
-//   {
-//     title: "Fashion Website",
-
-//     image: project6,
-
-//     shortDescription: "Modern fashion shopping experience built with React.",
-
-//     description:
-//       "A fashion e-commerce website built with React and Tailwind CSS. Currently under development.",
-
-//     technologies: ["React", "Tailwind CSS", "JavaScript"],
-
-//     demo: "https://fashionshop-12.netlify.app",
-
-//     github: "https://github.com/pyae-bhone-khant/fashionshop-12.git",
-
-//     category: "ecommerce",
-
-//     status: "Live",
-
-//     featured: false,
-//   },
-
-//   {
-//     title: "TMDB MOVIE",
-
-//     image: project9,
-
-//     shortDescription: "Movie discovery platform powered by TMDB API.",
-
-//     description:
-//       "A movie discovery platform that allows users to explore popular, trending, and detailed movie information.",
-
-//     technologies: ["Next.js", "Tailwind CSS", "Shadcn UI", "TMDB API"],
-
-//     demo: "https://tmdb-movie-pi.vercel.app/",
-
-//     github: "https://github.com/pyae-bhone-khant/tmdb-movie.git",
-
-//     category: "platform",
-
-//     status: "Live",
-
-//     featured: true,
-//   },
-// ];
 
 export const PROJECTS = [
   {
     title: "Zaya Social",
-
     image: project12,
-
     shortDescription:
       "Modern social platform with realtime interactions.",
-
     description:
       "A social media platform for connecting with friends, sharing updates, creating posts, and building communities with a modern responsive UI.",
-
     technologies: [
       "Shadcn",
       "Next.js",
@@ -182,37 +49,24 @@ export const PROJECTS = [
       "Prisma ORM",
       "PostgreSQL",
     ],
-
     github:
       "https://github.com/pyae-bhone-khant/Zaya-social-api.git",
-
     category: "platform",
-
     status: "In Progress",
-
     featured: true,
-
     duration: "2026",
-
     role: "Full Stack Developer",
-
     team: "Solo Project",
-
     gradient:
       "from-purple-500 via-pink-500 to-blue-500",
   },
-
   {
     title: "Zaya Note",
-
     image: project11,
-
     shortDescription:
       "Clean and minimal note-taking productivity app.",
-
     description:
       "A productivity-focused note-taking application for organizing tasks, ideas, and personal workflows with a clean user experience.",
-
     technologies: [
       "Shadcn",
       "Next.js",
@@ -220,37 +74,24 @@ export const PROJECTS = [
       "Prisma ORM",
       "Neon PostgreSQL",
     ],
-
     github:
       "https://github.com/pyae-bhone-khant/Note-api.git",
-
     category: "platform",
-
     status: "In Progress",
-
     featured: false,
-
     duration: "2026",
-
     role: "Frontend + Backend",
-
     team: "Solo Project",
-
     gradient:
       "from-cyan-500 to-blue-500",
   },
-
   {
     title: "Furnicture",
-
     image: project10,
-
     shortDescription:
       "Furniture e-commerce platform with modern UI.",
-
     description:
       "An e-commerce website for browsing, purchasing, and managing furniture products with a premium shopping interface.",
-
     technologies: [
       "Shadcn",
       "Next.js",
@@ -258,76 +99,51 @@ export const PROJECTS = [
       "Prisma ORM",
       "PostgreSQL",
     ],
-
     github:
       "https://github.com/pyae-bhone-khant/furnicture-api.git",
-
     category: "ecommerce",
-
     status: "In Progress",
-
     featured: true,
-
     duration: "2026",
-
     role: "Full Stack Developer",
-
     team: "Solo Project",
-
     gradient:
       "from-orange-500 to-pink-500",
   },
 
   {
     title: "Fashion Website",
-
     image: project6,
-
     shortDescription:
-      "Modern fashion shopping experience built with React.",
-
+      "https://github.com/pyae-bhone-khant/FashionShop.git",
     description:
       "A responsive fashion e-commerce website featuring product showcases, category browsing, and a modern shopping experience.",
-
     technologies: [
       "React",
       "Tailwind CSS",
       "JavaScript",
     ],
-
     demo:
       "https://fashionshop-12.netlify.app",
-
     github:
       "https://github.com/pyae-bhone-khant/fashionshop-12.git",
-
     category: "ecommerce",
-
     status: "Live",
-
     featured: false,
-
     duration: "2025",
-
     role: "Frontend Developer",
-
     team: "Solo Project",
-
     gradient:
       "from-pink-500 to-rose-500",
   },
 
   {
     title: "TMDB MOVIE",
-
     image: project9,
-
     shortDescription:
       "Movie discovery platform powered by TMDB API.",
-
     description:
       "A movie discovery platform that allows users to explore trending movies, ratings, trailers, and detailed movie information using TMDB API.",
-
     technologies: [
       "Next.js",
       "Tailwind CSS",
@@ -337,22 +153,14 @@ export const PROJECTS = [
 
     demo:
       "https://tmdb-movie-pi.vercel.app/",
-
     github:
-      "https://github.com/pyae-bhone-khant/tmdb-movie.git",
-
+      "https://github.com/pyae-bhone-khant/Movie-Website.git",
     category: "platform",
-
     status: "Live",
-
     featured: true,
-
     duration: "2025",
-
     role: "Frontend Developer",
-
     team: "Solo Project",
-
     gradient:
       "from-violet-500 to-indigo-500",
   },

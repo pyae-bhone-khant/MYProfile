@@ -187,7 +187,7 @@ const Hero = () => {
               className="flex flex-col sm:flex-row gap-3 w-full sm:w-auto"
             >
               <a
-                href="/PyaeBhoneKhant.pdf"
+                href="#projects"
                 className="mb-4 sm:mb-10 flex justify-center items-center gap-2 rounded-full bg-linear-to-r from-purple-600 to-blue-600 px-6 py-4 text-lg sm:text-xl text-white hover:from-purple-700 hover:to-blue-700 transition-all duration-300"
               >
                 <span>Explore Project</span>
