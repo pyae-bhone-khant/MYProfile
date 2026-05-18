@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Projects from "./components/Projects";
 import Technologies from "./components/Technologies";
 import Footer from "./components/Footer";
+import Experience from "./components/Experience";
 
 function App() {
   return (
@@ -38,6 +39,10 @@ function App() {
         <div className="border w-full border-gray-800"></div>
         <section id="technologies" className="scroll-mt-24">
         <Technologies />
+        </section>
+        <div className="border w-full border-gray-800"></div>
+        <section id="experience" className="scroll-mt-24">
+        <Experience />
         </section>
         <div className="border w-full border-gray-800"></div>
         <section id="projects" className="scroll-mt-24">

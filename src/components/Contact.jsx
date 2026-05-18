@@ -1,173 +1,116 @@
+"use client";
+
 import { motion } from "framer-motion";
+import { MapPin, Phone, Mail, ArrowUpRight } from "lucide-react";
 import { CONTACT } from "../constants";
 
-const Contact = () => {
+export default function Contact() {
   return (
-    <div className="py-12 border-t border-neutral-800/30">
-      <div className="max-w-6xl mx-auto px-4 lg:px-6">
+    <section className="py-20 border-t border-white/5  text-white">
+      <div className="max-w-6xl mx-auto px-4">
 
-        {/* HEADER */}
-        <motion.h2
-          whileInView={{ opacity: 1, y: 0 }}
-          initial={{ opacity: 0, y: -50 }}
-          transition={{ duration: 0.6 }}
-          className="section-title text-3xl sm:text-4xl font-bold font-['Space_Grotesk'] mb-10 lg:mb-12 text-center lg:text-left"
-        >
-          Contact Me
-        </motion.h2>
+        {/* Header */}
+        <div className="mb-12 text-center  flex justify-center lg:text-left">
 
-        {/* GRID */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
+          <motion.h2
+            whileInView={{ opacity: 1, y: 0 }}
+            initial={{ opacity: 0, y: -100 }}
+            transition={{ duration: 1 }}
+            className="text-3xl text-blue-500 sm:text-4xl font-extrabold tracking-tight">
+            Connect  Me
+          </motion.h2>
+        </div>
 
-          {/* LEFT SIDE */}
+        {/* Grid Layout */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 items-stretch">
+
+          {/* Left Side: Pitch & CTA */}
           <motion.div
-            whileInView={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: -60 }}
-            transition={{ duration: 0.8 }}
-            className="card lg:col-span-7 p-6 sm:p-8 lg:p-12 flex flex-col justify-between items-start gap-8 rounded-3xl"
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5 }}
+            className="lg:col-span-7 border border-white/5 bg-white/[0.01] p-6 sm:p-10 rounded-2xl flex flex-col justify-between gap-8"
           >
-
             <div className="space-y-4">
-
-              <span
-                className="text-xs font-bold uppercase tracking-widest block"
-                style={{ color: "var(--accent-color)" }}
-              >
-                Let's Build
-              </span>
-
-              <h3 className="text-2xl sm:text-3xl lg:text-4xl font-bold font-['Space_Grotesk'] text-white leading-tight max-w-xl">
-                Looking for a developer who can shape both the interface and the system behind it.
+              <h3 className="text-xl sm:text-2xl font-bold text-white/80 leading-tight max-w-lg">
+                Looking for a full-stack developer who can bridge the gap between frontend interfaces and backend infrastructure?
               </h3>
-
-              <p
-                className="hidden sm:block text-base md:text-lg leading-relaxed font-light pt-2 max-w-2xl"
-                style={{ color: "var(--text-secondary)" }}
-              >
-                I enjoy working on products that need thoughtful UX, solid
-                engineering decisions, and steady delivery. If you have a
-                feature, MVP, or internal tool in mind, I'd love to hear about it.
+              <p className="text-sm sm:text-base text-gray-400 leading-relaxed max-w-xl">
+                I thrive on building scalable web apps, e-commerce architectures, and digital workflows. If you have an internship, junior opening, or a project in mind, let’s talk.
               </p>
             </div>
 
-            {/* BUTTON */}
             <a
               href={`mailto:${CONTACT.email}`}
-              className="btn-primary inline-flex items-center gap-2 px-6 py-3 sm:px-8 sm:py-4 rounded-full transition-all duration-300 transform hover:scale-105 text-sm sm:text-base"
-              style={{ backgroundColor: "var(--accent-color)" }}
+              className="inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-blue-400 text-black hover:bg-gray-200 text-sm font-semibold transition-colors w-full sm:w-fit"
             >
-              {/* MOBILE */}
-              <span className="sm:hidden text-xl">✉️</span>
-
-              {/* DESKTOP */}
-              <span className="hidden sm:flex items-center gap-2">
-                <span>Start a conversation</span>
-                <span className="text-xl font-light">↗</span>
-              </span>
+              <span>Start a conversation</span>
+              <ArrowUpRight size={16} strokeWidth={2.5} />
             </a>
           </motion.div>
 
-          {/* RIGHT SIDE */}
+          {/* Right Side: Info Cards */}
           <motion.div
-            whileInView={{ opacity: 1, x: 0 }}
-            initial={{ opacity: 0, x: 60 }}
-            transition={{ duration: 0.8 }}
-            className="card lg:col-span-5 p-4 sm:p-6 lg:p-8 flex flex-row lg:flex-col justify-center gap-4 rounded-3xl"
+            initial={{ opacity: 0, y: 15 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.5, delay: 0.1 }}
+            className="lg:col-span-5 flex flex-col gap-4"
           >
-
-            {/* LOCATION */}
-            <div className="flex-1 flex items-center justify-center lg:justify-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-white/10 transition-colors duration-300">
-
-              <div
-                className="text-2xl"
-                style={{ color: "var(--accent-color)" }}
-              >
-                📍
+            {/* Location */}
+            <div className="flex items-center gap-4 p-5 rounded-xl border border-white/5 bg-white/[0.01]">
+              <div className="p-3 rounded-lg bg-purple-500/10 text-purple-400 border border-purple-500/10">
+                <MapPin size={20} />
               </div>
-
-              {/* HIDE TEXT ON MOBILE */}
-              <div className="hidden sm:flex flex-col">
-                <span
-                  className="text-xs font-semibold uppercase tracking-wider"
-                  style={{ color: "var(--text-muted)" }}
-                >
+              <div className="flex flex-col">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-gray-500">
                   Location
                 </span>
-
-                <span
-                  className="text-base font-medium mt-0.5"
-                  style={{ color: "var(--text-primary)" }}
-                >
+                <span className="text-sm font-medium text-gray-200 mt-0.5">
                   {CONTACT.address}
                 </span>
               </div>
             </div>
 
-            {/* PHONE */}
-            <div className="flex-1 flex items-center justify-center lg:justify-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-white/10 transition-colors duration-300">
-
-              <div
-                className="text-2xl"
-                style={{ color: "var(--accent-color)" }}
-              >
-                📞
+            {/* Phone */}
+            {CONTACT.phoneNo && (
+              <div className="flex items-center gap-4 p-5 rounded-xl border border-white/5 bg-white/[0.01]">
+                <div className="p-3 rounded-lg bg-blue-500/10 text-blue-400 border border-blue-500/10">
+                  <Phone size={20} />
+                </div>
+                <div className="flex flex-col">
+                  <span className="text-[11px] font-bold uppercase tracking-wider text-gray-500">
+                    Phone
+                  </span>
+                  <span className="text-sm font-medium text-gray-200 mt-0.5 tracking-wide">
+                    {CONTACT.phoneNo}
+                  </span>
+                </div>
               </div>
+            )}
 
-              {/* HIDE TEXT ON MOBILE */}
-              <div className="hidden sm:flex flex-col">
-                <span
-                  className="text-xs font-semibold uppercase tracking-wider"
-                  style={{ color: "var(--text-muted)" }}
-                >
-                  Phone
-                </span>
-
-                <span
-                  className="text-base font-medium tracking-wide mt-0.5"
-                  style={{ color: "var(--text-primary)" }}
-                >
-                  {CONTACT.phoneNo}
-                </span>
-              </div>
-            </div>
-
-            {/* EMAIL */}
+            {/* Email Contact Card */}
             <a
               href={`mailto:${CONTACT.email}`}
-              className="flex-1 flex items-center justify-center lg:justify-start gap-4 p-4 rounded-xl bg-white/[0.02] border border-white/5 hover:border-[--accent-color]/30 hover:bg-white/[0.04] transition-all duration-300 group"
+              className="flex items-center gap-4 p-5 rounded-xl border border-white/5 bg-white/[0.01] hover:border-purple-500/30 hover:bg-white/[0.02] transition-all group"
             >
-
-              <div
-                className="text-2xl group-hover:scale-110 transition-transform duration-300"
-                style={{ color: "var(--accent-color)" }}
-              >
-                ✉️
+              <div className="p-3 rounded-lg bg-pink-500/10 text-pink-400 border border-pink-500/10 group-hover:scale-105 transition-transform">
+                <Mail size={20} />
               </div>
-
-              {/* HIDE TEXT ON MOBILE */}
-              <div className="hidden sm:flex flex-col">
-                <span
-                  className="text-xs font-semibold uppercase tracking-wider"
-                  style={{ color: "var(--text-muted)" }}
-                >
+              <div className="flex flex-col">
+                <span className="text-[11px] font-bold uppercase tracking-wider text-gray-500">
                   Email
                 </span>
-
-                <span
-                  className="text-base font-medium mt-0.5 group-hover:underline decoration-1"
-                  style={{ color: "var(--text-primary)" }}
-                >
+                <span className="text-sm font-medium text-gray-200 mt-0.5 group-hover:text-purple-300 transition-colors break-all">
                   {CONTACT.email}
                 </span>
               </div>
             </a>
 
           </motion.div>
-
         </div>
       </div>
-    </div>
+    </section>
   );
-};
-
-export default Contact;
+}

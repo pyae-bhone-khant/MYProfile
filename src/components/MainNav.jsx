@@ -7,6 +7,7 @@ const navItems = [
   { name: "Home", icon: Home },
   { name: "About", icon: User },
   { name: "Technologies", icon: Code },
+  { name: "Experience", icon: Briefcase },
   { name: "Projects", icon: Briefcase },
   { name: "Contact", icon: Mail },
 ];

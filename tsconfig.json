@@ -1,0 +1,9 @@
+{
+  "compilerOptions": {
+    // ... တခြား ရှိပြီးသား configuration များ
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["./src/*"]
+    }
+  }
+}
