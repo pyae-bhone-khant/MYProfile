@@ -6,6 +6,8 @@ import project9 from "../assets/projects/project9.png";
 import project10 from "../assets/projects/project10.png";
 import project11 from "../assets/projects/project11.png";
 import project12 from "../assets/projects/project12.png";
+import project13 from "../assets/projects/project13.png";
+
 
 export const HERO_CONTENT = `I am self-taught passionate full stack  developer with a strong sense of responsibility
 and organization.I am passionate about modern web
@@ -35,6 +37,29 @@ export const EXPERIENCES = [
 
 
 export const PROJECTS = [
+  {
+    title: "COOKCRAFT",
+    image: project13,
+    shortDescription:
+      "A cooking recipe sharing platform",
+    description:
+      "A platform for sharing and discovering cooking recipes with a modern, user-friendly interface.",
+    technologies: [
+      "MUI",
+      "Next.js",  
+    ],
+    github:
+      "https://github.com/pyae-bhone-khant/CookRecipe",
+    category: "platform",
+    status: "Completed",
+    featured: true,
+    duration: "2026",
+    role: "Full Stack Developer",
+    team: "Solo Project",
+    demo: "https://cook-recipe-tawny.vercel.app/",
+    gradient:
+      "from-purple-500 via-pink-500 to-blue-500",
+  },
   {
     title: "Zaya Social",
     image: project12,
