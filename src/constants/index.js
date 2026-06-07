@@ -7,6 +7,9 @@ import project10 from "../assets/projects/project10.png";
 import project11 from "../assets/projects/project11.png";
 import project12 from "../assets/projects/project12.png";
 import project13 from "../assets/projects/project13.png";
+import project14 from "../assets/projects/project14.png";
+import project15 from "../assets/projects/project15.png";
+
 
 
 export const HERO_CONTENT = `I am self-taught passionate full stack  developer with a strong sense of responsibility
@@ -61,6 +64,57 @@ export const PROJECTS = [
       "from-purple-500 via-pink-500 to-blue-500",
   },
   {
+      title: "Meeting Room Booking",
+      image: project15,
+      shortDescription:
+        "Meeting room booking system with real-time availability.",
+      description:
+        "A system for booking and managing meeting rooms with real-time availability and conflict detection.",
+      technologies: [
+        "Shadcn",
+        "Next.js",
+        "Express.js",
+        "Prisma ORM",
+        "Neon PostgreSQL",
+        "Better-auth",
+      ],
+      github:
+        "https://github.com/pyae-bhone-khant/Meeting-Room_Booking_System-api.git",
+      category: "platform",
+      status: "Completed",
+      featured: true,
+      duration: "2026",
+      role: "Full Stack Developer",
+      team: "UI UX - Judith",
+      gradient:
+      "from-orange-500 to-pink-500",
+    },
+    {
+      title: "Furnicture",
+      image: project14,
+      shortDescription:
+        "Furniture e-commerce platform with modern UI.",
+      description:
+        "An e-commerce website for browsing, purchasing, and managing furniture products with a premium shopping interface.",
+      technologies: [
+        "Shadcn",
+        "Next.js",
+        "Express.js",
+        "Prisma ORM",
+        "PostgreSQL",
+      ],
+      github:
+        "https://github.com/pyae-bhone-khant/furnicture-api.git",
+      category: "ecommerce",
+      status: "Completed",
+      featured: true,
+      duration: "2026",
+      role: "Full Stack Developer",
+      team: "Solo Project",
+      gradient:
+        "from-orange-500 to-pink-500",
+    },
+  {
     title: "Zaya Social",
     image: project12,
     shortDescription:
@@ -85,82 +139,8 @@ export const PROJECTS = [
     gradient:
       "from-purple-500 via-pink-500 to-blue-500",
   },
-  {
-    title: "Zaya Note",
-    image: project11,
-    shortDescription:
-      "Clean and minimal note-taking productivity app.",
-    description:
-      "A productivity-focused note-taking application for organizing tasks, ideas, and personal workflows with a clean user experience.",
-    technologies: [
-      "Shadcn",
-      "Next.js",
-      "Express.js",
-      "Prisma ORM",
-      "Neon PostgreSQL",
-    ],
-    github:
-      "https://github.com/pyae-bhone-khant/Note-api.git",
-    category: "platform",
-    status: "In Progress",
-    featured: false,
-    duration: "2026",
-    role: "Frontend + Backend",
-    team: "Solo Project",
-    gradient:
-      "from-cyan-500 to-blue-500",
-  },
-  {
-    title: "Furnicture",
-    image: project10,
-    shortDescription:
-      "Furniture e-commerce platform with modern UI.",
-    description:
-      "An e-commerce website for browsing, purchasing, and managing furniture products with a premium shopping interface.",
-    technologies: [
-      "Shadcn",
-      "Next.js",
-      "Express.js",
-      "Prisma ORM",
-      "PostgreSQL",
-    ],
-    github:
-      "https://github.com/pyae-bhone-khant/furnicture-api.git",
-    category: "ecommerce",
-    status: "In Progress",
-    featured: true,
-    duration: "2026",
-    role: "Full Stack Developer",
-    team: "Solo Project",
-    gradient:
-      "from-orange-500 to-pink-500",
-  },
-
-  {
-    title: "Fashion Website",
-    image: project6,
-    shortDescription:
-      "https://github.com/pyae-bhone-khant/FashionShop.git",
-    description:
-      "A responsive fashion e-commerce website featuring product showcases, category browsing, and a modern shopping experience.",
-    technologies: [
-      "React",
-      "Tailwind CSS",
-      "JavaScript",
-    ],
-    demo:
-      "https://fashionshop-12.netlify.app",
-    github:
-      "https://github.com/pyae-bhone-khant/fashionshop-12.git",
-    category: "ecommerce",
-    status: "Live",
-    featured: false,
-    duration: "2025",
-    role: "Frontend Developer",
-    team: "Solo Project",
-    gradient:
-      "from-pink-500 to-rose-500",
-  },
+  
+  
 
   {
     title: "TMDB MOVIE",
