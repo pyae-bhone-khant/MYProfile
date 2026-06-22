@@ -4,8 +4,10 @@ import { useState, useMemo } from "react";
 import { motion } from "framer-motion";
 import { Search } from "lucide-react";
 import { PROJECTS } from "../constants";
-
+import { ArrowUpRight } from 'lucide-react';
+import { DrawerDialogDemo } from "./drawer";
 const CATEGORIES = ["all", "platform", "ecommerce"];
+
 
 export default function Projects() {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -154,8 +156,8 @@ export default function Projects() {
                 key={category}
                 onClick={() => setSelectedCategory(category)}
                 className={`flex-1 md:flex-none px-4 py-1.5 rounded-md text-sm font-medium capitalize transition-all ${selectedCategory === category
-                    ? "bg-white/10 text-white shadow-sm"
-                    : "text-gray-400 hover:text-white"
+                  ? "bg-white/10 text-white shadow-sm"
+                  : "text-gray-400 hover:text-white"
                   }`}
               >
                 {category}
@@ -177,6 +179,8 @@ export default function Projects() {
         {/* Projects Grid */}
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {/* <h2 className="text-2xl font-bold text-white">Projects {filteredProjects.length}</h2> */}
+
+
           {filteredProjects.map((project, idx) => (
             <motion.div
               key={idx}
@@ -184,64 +188,53 @@ export default function Projects() {
               initial={{ opacity: 0, y: 10 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: idx * 0.02 }}
-              className="flex flex-col justify-between border border-white/5 bg-white/[0.01] rounded-xl overflow-hidden hover:border-white/10 transition-colors"
-            >
-              <div>
-                <div className="aspect-video relative overflow-hidden bg-gray-900">
-                  <img
-                    src={project.image}
-                    alt={project.title}
-                    className="w-full h-full object-cover"
-                  />
-                  <span className="absolute top-3 left-3 text-[10px] uppercase font-bold tracking-wider bg-black/60 px-2 py-0.5 rounded text-gray-300 backdrop-blur-md">
-                    {project.category}
-                  </span>
-                </div>
+              // Hover လုပ်တဲ့အခါ scale နည်းနည်းတက်ပြီး shadow ပေါ်လာအောင် လုပ်ထားပါတယ်
+              whileHover={{ scale: 1.02, transition: { duration: 0.2 } }}
+              className="flex flex-col items-start text-start align-start justify-between border border-white/5 bg-white/[0.01] rounded-xl overflow-hidden hover:border-white/10 transition-colors"
+            >  
+            
+
+              <div className="aspect-video relative overflow-hidden bg-gray-900">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="w-full h-full object-cover"
+                />
+                <span className="absolute top-3 left-3 text-[10px] uppercase font-bold tracking-wider bg-black/60 px-2 py-0.5 rounded text-gray-300 backdrop-blur-md">
+                  {project.category}
+                </span>
+              </div>
+              {/* drawer */}
+              <DrawerDialogDemo project={project}>
+
 
                 <div className="p-5">
-                  <h4 className="text-lg font-bold text-white mb-1">{project.title}</h4>
-                  <p className="text-xs text-purple-400 mb-3">{project.shortDescription}</p>
-                  <p className="text-gray-400 text-xs leading-relaxed line-clamp-3">
+                  <div className="flex justify-between">
+                    <h4 className="text-lg font-bold text-white mb-1">{project.title}</h4>
+                    <ArrowUpRight />
+                  </div>
+                  <p className="text-xs text-start text-purple-400 mb-3">{project.shortDescription}</p>
+                  <p className="text-gray-400 text-xs text-start leading-relaxed line-clamp-3">
                     {project.description}
                   </p>
                 </div>
-              </div>
 
-              <div className="p-5 pt-0">
-                <div className="flex flex-wrap gap-1 mb-4">
-                  {project.technologies.slice(0, 4).map((tech, i) => (
-                    <span key={i} className="text-[11px] bg-white/5 px-2 py-0.5 rounded text-gray-400">
-                      {tech}
-                    </span>
-                  ))}
-                  {project.technologies.length > 4 && (
-                    <span className="text-[11px] text-gray-500 self-center pl-1">
-                      +{project.technologies.length - 4}
-                    </span>
-                  )}
-                </div>
 
-                <div className="flex gap-2.5">
-                  {project.demo && (
-                    <a
-                      href={project.demo}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="flex-1 text-center text-xs font-semibold bg-white/5 hover:bg-white/10 text-white py-2 rounded transition-colors"
-                    >
-                      Demo
-                    </a>
-                  )}
-                  <a
-                    href={project.github}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex-1 text-center text-xs font-semibold border border-white/5 hover:bg-white/5 text-gray-300 py-2 rounded transition-colors"
-                  >
-                    Code
-                  </a>
+                <div className="p-5 pt-0">
+                  <div className="flex flex-wrap gap-1 mb-4">
+                    {project.technologies.slice(0, 4).map((tech, i) => (
+                      <span key={i} className="text-[11px] bg-white/5 px-2 py-0.5 rounded text-gray-400">
+                        {tech}
+                      </span>
+                    ))}
+                    {project.technologies.length > 4 && (
+                      <span className="text-[11px] text-gray-500 self-center pl-1">
+                        +{project.technologies.length - 4}
+                      </span>
+                    )}
+                  </div>
                 </div>
-              </div>
+              </DrawerDialogDemo>
             </motion.div>
           ))}
         </div>

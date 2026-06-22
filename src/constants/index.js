@@ -1,14 +1,9 @@
+import project1 from "../assets/projects/project1.png";
+import project2 from "../assets/projects/project2.png";
+import project3 from "../assets/projects/project3.png";
+import project4 from "../assets/projects/project4.png";
 import project5 from "../assets/projects/project5.png";
 import project6 from "../assets/projects/project6.png";
-import project7 from "../assets/projects/project7.png";
-import project8 from "../assets/projects/project8.png";
-import project9 from "../assets/projects/project9.png";
-import project10 from "../assets/projects/project10.png";
-import project11 from "../assets/projects/project11.png";
-import project12 from "../assets/projects/project12.png";
-import project13 from "../assets/projects/project13.png";
-import project14 from "../assets/projects/project14.png";
-import project15 from "../assets/projects/project15.png";
 
 
 
@@ -21,28 +16,20 @@ export const ABOUT_TEXT = `I am a dedicated and versatile full stack developer w
 
 export const EXPERIENCES = [
   {
-    year: "2025-2025",
-    role: " Full Stack Developer (OJT)",
+    year: "2025-2026",
+    role: " Full Stack Developer ",
     company: "Untimake Solutions",
     description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
     technologies: ["Javascript", "React.js", "Next.js",  "NestJS",  "prisma", "neon Postgres", "mongoDB"],
   }, 
 
-   {
-    year: "2026-present",
-    role: " Full Stack Developer",
-    company: "Google Inc.",
-    description: `Led a team in developing and maintaining web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases. Collaborated with stakeholders to define project requirements and timelines.`,
-    technologies: ["Javascript", "React.js", "Next.js", "mongoDB"],
-  },
- 
 ];
 
 
 export const PROJECTS = [
   {
     title: "COOKCRAFT",
-    image: project13,
+    image: project4,
     shortDescription:
       "A cooking recipe sharing platform",
     description:
@@ -50,7 +37,11 @@ export const PROJECTS = [
     technologies: [
       "MUI",
       "Next.js",  
-    ],
+      "Prisma ORM",
+      "PostgreSQL",
+      "socket.io"
+    ], 
+    page : ["Kitchen sync" , "Post Recipe" , "Recipe Detail"] ,
     github:
       "https://github.com/pyae-bhone-khant/CookRecipe",
     category: "platform",
@@ -65,7 +56,7 @@ export const PROJECTS = [
   },
   {
       title: "Meeting Room Booking",
-      image: project15,
+      image: project6,
       shortDescription:
         "Meeting room booking system with real-time availability.",
       description:
@@ -78,6 +69,7 @@ export const PROJECTS = [
         "Neon PostgreSQL",
         "Better-auth",
       ],
+      page : ["Dashboard" , "Booking" , "Room Management" , "User Management"],
       github:
         "https://github.com/pyae-bhone-khant/Meeting-Room_Booking_System-api.git",
       category: "platform",
@@ -91,7 +83,7 @@ export const PROJECTS = [
     },
     {
       title: "Furnicture",
-      image: project14,
+      image: project5,
       shortDescription:
         "Furniture e-commerce platform with modern UI.",
       description:
@@ -102,7 +94,9 @@ export const PROJECTS = [
         "Express.js",
         "Prisma ORM",
         "PostgreSQL",
+        "redis"
       ],
+      page : [ "Product List" , "Product Detail" ,  "Checkout" , "Order History"],
       github:
         "https://github.com/pyae-bhone-khant/furnicture-api.git",
       category: "ecommerce",
@@ -116,7 +110,7 @@ export const PROJECTS = [
     },
   {
     title: "Zaya Social",
-    image: project12,
+    image: project3,
     shortDescription:
       "Modern social platform with realtime interactions.",
     description:
@@ -128,6 +122,7 @@ export const PROJECTS = [
       "Prisma ORM",
       "PostgreSQL",
     ],
+    page : [ "Profile" , "Chat" , "Notification" , "Settings"],
     github:
       "https://github.com/pyae-bhone-khant/Zaya-social-api.git",
     category: "platform",
@@ -144,7 +139,7 @@ export const PROJECTS = [
 
   {
     title: "TMDB MOVIE",
-    image: project9,
+    image: project1,
     shortDescription:
       "Movie discovery platform powered by TMDB API.",
     description:
@@ -155,6 +150,8 @@ export const PROJECTS = [
       "Shadcn UI",
       "TMDB API",
     ],
+
+    page : [ "Movie List" , "Movie Detail" , "Search" , "Rating"],
 
     demo:
       "https://tmdb-movie-pi.vercel.app/",
