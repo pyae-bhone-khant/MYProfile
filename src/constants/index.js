@@ -4,6 +4,9 @@ import project3 from "../assets/projects/project3.png";
 import project4 from "../assets/projects/project4.png";
 import project5 from "../assets/projects/project5.png";
 import project6 from "../assets/projects/project6.png";
+import project7 from "../assets/projects/project7.png";
+
+
 
 
 
@@ -33,13 +36,16 @@ export const PROJECTS = [
     shortDescription:
       "A cooking recipe sharing platform",
     description:
-      "A platform for sharing and discovering cooking recipes with a modern, user-friendly interface.",
+      "Secure full-stack cooking-log application featuring complex database relations, data visualization, and real-time features.",
     technologies: [
-      "MUI",
-      "Next.js",  
-      "Prisma ORM",
-      "PostgreSQL",
-      "socket.io"
+      "Next.js",
+      "React 19 ",
+      "Prisma ",
+     "MySQL",
+    "Next-Auth",
+    "MUI",
+    "Socket.io",
+    "Chart.js"
     ], 
     page : ["Kitchen sync" , "Post Recipe" , "Recipe Detail"] ,
     github:
@@ -53,6 +59,36 @@ export const PROJECTS = [
     demo: "https://cook-recipe-tawny.vercel.app/",
     gradient:
       "from-purple-500 via-pink-500 to-blue-500",
+  }, 
+  {
+    title: "SkillHub MM",
+    image: project7,
+    shortDescription:
+      "Decoupled video learning platform ",
+    description:
+      "Decoupled video learning platform built with an asynchronous background queue system and dynamic progress tracking",
+    technologies: [
+      "Next.js",
+      "Redux",  
+      "Tanstack Queary",
+      "Shadcn-ui",
+      "Prisma",
+      "PostgreSQL (Neon DB)",
+      "Redis",
+      "BullMQ"
+    ], 
+    page : ["Level test" , "Dashboard" , "Blogs" , "course"] ,
+    github:
+      "https://github.com/pyae-bhone-khant/MYProfile.git",
+    category: "platform",
+    status: "Processing",
+    featured: true,
+    duration: "2026",
+    role: "Full Stack Developer",
+    team: "Solo Project",
+    // demo: "https://cook-recipe-tawny.vercel.app/",
+    gradient:
+      "from-purple-500 via-pink-500 to-blue-500",
   },
   {
       title: "Meeting Room Booking",
@@ -60,7 +96,7 @@ export const PROJECTS = [
       shortDescription:
         "Meeting room booking system with real-time availability.",
       description:
-        "A system for booking and managing meeting rooms with real-time availability and conflict detection.",
+        "Real-time reservation platform featuring live availability updates via WebSockets and secure multi-provider authentication.",
       technologies: [
         "Shadcn",
         "Next.js",
@@ -89,12 +125,7 @@ export const PROJECTS = [
       description:
         "An e-commerce website for browsing, purchasing, and managing furniture products with a premium shopping interface.",
       technologies: [
-        "Shadcn",
-        "Next.js",
-        "Express.js",
-        "Prisma ORM",
-        "PostgreSQL",
-        "redis"
+       "Next.js", "Zustand", "TanStack Query", "Express", "Prisma", "Redis", "BullMQ", "Jest", "Supertest"
       ],
       page : [ "Product List" , "Product Detail" ,  "Checkout" , "Order History"],
       github:

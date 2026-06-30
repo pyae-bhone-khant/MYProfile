@@ -26,7 +26,6 @@ export function DrawerDialogDemo({
   if (isDesktop) {
     return (
       <Dialog open={open} onOpenChange={setOpen}>
-        {/* 'asChild' tells the Dialog to use your provided element as the trigger */}
         <DialogTrigger>
           <div className="cursor-pointer">{children}</div>
         </DialogTrigger>
@@ -40,7 +39,8 @@ export function DrawerDialogDemo({
               />
             </div>
             <div className="px-10">
-              <div className="rounded-4xl mt-13 h-120 mb-10 w-full border border-gray-800 bg-[#010114] p-6">
+              {/* h-120 မှ h-auto သို့ ပြောင်းလဲထားပါသည် (စာများလျှင် အောက်သို့ ဆွဲဆန့်နိုင်ရန်) */}
+              <div className="rounded-4xl mt-13 h-auto mb-10 w-full border border-gray-800 bg-[#010114] p-6">
                 <p className="bg-linear-to-r from-blue-600 to-white bg-clip-text text-xl text-transparent">
                   {project.category}
                 </p>
@@ -51,42 +51,48 @@ export function DrawerDialogDemo({
                 <p className="mt-5 text-xl text-white/75">
                   {project.description}
                 </p>
-                <div className="flex gap-4">
+                
+                {/* flex-wrap ထည့်ထားပါသည် */}
+                <div className="flex flex-wrap gap-4">
                   {project.page &&
                     project.page.map((page: string, index: number) => (
                       <p
                         key={index}
-                        className="mt-8 rounded border border-gray-400 bg-gray-800 px-4 py-2 text-xl text-white"
+                        className="mt-4 rounded border border-gray-400 bg-gray-800 px-4 py-2 text-xl text-white"
                       >
                         {page}
                       </p>
                     ))}
                 </div>
-                <div className="flex gap-4">
+
+                {/* flex-wrap ထည့်ထားပါသည် */}
+                <div className="flex flex-wrap gap-4">
                   {project.technologies &&
                     project.technologies.map((tech: string, index: number) => (
                       <p
                         key={index}
-                        className="mt-8 rounded-full border border-gray-600 bg-purple-600 px-2 py-1 text-sm text-white"
+                        className="mt-4 rounded-full border border-gray-600 bg-purple-600 px-2 py-1 text-sm text-white"
                       >
                         {tech}
                       </p>
                     ))}
                 </div>
-                <div className="flex w-full items-center justify-center gap-8 text-center">
+
+                {/* Button များအတွက်လည်း နေရာမဆံ့ပါက အောက်ဆင်းရန် flex-wrap ထည့်ထားပါသည် */}
+                <div className="flex w-full flex-wrap items-center justify-center gap-4 sm:gap-8 text-center">
                   {project.github ? (
                     <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-10 flex w-1/2 items-center justify-center rounded-full border border-gray-800 bg-gray-800 py-4 text-xl text-white transition hover:bg-gray-700"
+                      className="mt-10 flex min-w-[200px] flex-1 items-center justify-center rounded-full border border-gray-800 bg-gray-800 py-4 text-xl text-white transition hover:bg-gray-700"
                     >
                       <span className="flex items-center justify-center gap-2">
                         View Source Code <FaGithub />
                       </span>
                     </a>
                   ) : (
-                    <p className="mt-10 flex w-1/2 cursor-not-allowed items-center justify-center rounded-full border border-gray-800 bg-gray-800 py-4 text-xl text-white opacity-50">
+                    <p className="mt-10 flex min-w-[200px] flex-1 cursor-not-allowed items-center justify-center rounded-full border border-gray-800 bg-gray-800 py-4 text-xl text-white opacity-50">
                       <span className="flex items-center justify-center gap-2">
                         Private Repository <LockIcon />
                       </span>
@@ -98,17 +104,15 @@ export function DrawerDialogDemo({
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-10 w-1/2 rounded-full border border-gray-800 bg-purple-600 py-4 text-xl text-white transition hover:bg-purple-700"
+                      className="mt-10 min-w-[200px] flex-1 rounded-full border border-gray-800 bg-purple-600 py-4 text-xl text-white transition hover:bg-purple-700"
                     >
                       <span className="flex items-center justify-center gap-2">
-                        {" "}
                         view Demo <ArrowUpRight />
                       </span>
                     </a>
                   ) : (
-                    <p className="mt-10 flex w-1/2 cursor-not-allowed items-center justify-center rounded-full border border-gray-800 bg-gray-800 py-4 text-xl text-white opacity-50">
+                    <p className="mt-10 flex min-w-[200px] flex-1 cursor-not-allowed items-center justify-center rounded-full border border-gray-800 bg-gray-800 py-4 text-xl text-white opacity-50">
                       <span className="flex items-center justify-center gap-2">
-                        {" "}
                         demo not available <X />
                       </span>
                     </p>
@@ -124,7 +128,6 @@ export function DrawerDialogDemo({
 
   return (
     <Drawer open={open} onOpenChange={setOpen}>
-      {/* Wrapped in a div to ensure a single React element is passed to 'Slot' */}
       <DrawerTrigger>
         <div className="cursor-pointer">{children}</div>
       </DrawerTrigger>
