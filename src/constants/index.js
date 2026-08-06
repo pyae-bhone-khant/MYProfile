@@ -26,8 +26,8 @@ export const EXPERIENCES = [
     technologies: ["Javascript", "React.js", "Next.js",  "NestJS",  "prisma", "neon Postgres", "mongoDB"],
   }, 
   {
-    year : "2026" ,
-    role : "Full Stck Developer",
+    year : "2026 - PRESENT " ,
+    role : "Full Stack Developer",
     company : "Mahar(abc contant solutions)",
     description : "Developed and maintained web applications using JavaScript, React.js, and Node.js. Implemented RESTful APIs and integrated with MongoDB databases.",
     technologies : ["Javascript", "React.js", "Next.js", "express.js", "nest.js"]
