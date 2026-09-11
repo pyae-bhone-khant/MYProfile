@@ -156,7 +156,7 @@ body {
 }
 
 /* Animated background */
-.animated-bg {
+/* .animated-bg {
   position: fixed;
   top: 0;
   left: 0;
@@ -166,7 +166,7 @@ body {
   background-size: 400% 400%;
   animation: gradientShift 15s ease infinite;
   z-index: -2;
-}
+} */
 
 @keyframes gradientShift {
   0% { background-position: 0% 50%; }
@@ -175,7 +175,7 @@ body {
 }
 
 /* Floating particles */
-.particles {
+/* .particles {
   position: fixed;
   top: 0;
   left: 0;
@@ -193,7 +193,7 @@ body {
   border-radius: 50%;
   opacity: 0.5;
   animation: float 20s infinite linear;
-}
+} */
 
 @keyframes float {
   0% {

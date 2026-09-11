@@ -147,8 +147,8 @@ const Hero = () => {
               variants={childVariants}
               className="hidden sm:flex flex-wrap gap-4 mb-10 justify-center lg:justify-start"
             >
-              <a
-                href="/PyaeBhoneKhant.pdf"
+              <p
+               
                 className="group relative overflow-hidden text-xl lg:text-2xl rounded-xl border border-white/10 bg-white/5 px-6 py-4 text-slate-300 transition-all hover:border-white/30 hover:text-white"
               >
                 <span className="relative z-10">
@@ -156,10 +156,10 @@ const Hero = () => {
                 </span>
 
                 <div className="absolute inset-0 -z-10 bg-linear-to-r from-purple-900/20 to-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </a>
+              </p>
 
-              <a
-                href="/PyaeBhoneKhant.pdf"
+              <p
+            
                 className="group relative overflow-hidden text-xl lg:text-2xl rounded-xl border border-white/10 bg-white/5 px-6 py-4 text-slate-300 transition-all hover:border-white/30 hover:text-white"
               >
                 <span className="relative z-10">
@@ -167,10 +167,10 @@ const Hero = () => {
                 </span>
 
                 <div className="absolute inset-0 -z-10 bg-linear-to-r from-purple-900/20 to-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </a>
+              </p>
 
-              <a
-                href="/PyaeBhoneKhant.pdf"
+              <p
+               
                 className="group relative overflow-hidden text-xl lg:text-2xl rounded-xl border border-white/10 bg-white/5 px-6 py-4 text-slate-300 transition-all hover:border-white/30 hover:text-white"
               >
                 <span className="relative z-10">
@@ -178,7 +178,7 @@ const Hero = () => {
                 </span>
 
                 <div className="absolute inset-0 -z-10 bg-linear-to-r from-purple-900/20 to-blue-900/20 opacity-0 group-hover:opacity-100 transition-opacity" />
-              </a>
+              </p>
             </motion.div>
 
             {/* BUTTONS */}
