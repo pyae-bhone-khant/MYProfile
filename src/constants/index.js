@@ -1,11 +1,6 @@
 import project1 from "../assets/projects/project1.png";
 import project2 from "../assets/projects/project2.png";
 import project3 from "../assets/projects/project3.png";
-import project4 from "../assets/projects/project4.png";
-import project5 from "../assets/projects/project5.png";
-import project6 from "../assets/projects/project6.png";
-import project7 from "../assets/projects/project7.png";
-import project8 from "../assets/projects//project8.png"
 
 
 
@@ -40,7 +35,7 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "Next Estate",
-    image: project8,
+    image: project3,
     shortDescription:
       "Modern real estate marketplace for discovering and managing properties.",
     description:
@@ -67,7 +62,7 @@ export const PROJECTS = [
   }, 
   {
     title: "COOKCRAFT",
-    image: project4,
+    image: project2,
     shortDescription:
       "A cooking recipe sharing platform",
     description:
@@ -97,7 +92,7 @@ export const PROJECTS = [
   }, 
   {
     title: "SkillHub MM",
-    image: project7,
+    image: project1,
     shortDescription:
       "Decoupled video learning platform ",
     description:
@@ -125,113 +120,7 @@ export const PROJECTS = [
     gradient:
       "from-purple-500 via-pink-500 to-blue-500",
   },
-  {
-      title: "Meeting Room Booking",
-      image: project6,
-      shortDescription:
-        "Meeting room booking system with real-time availability.",
-      description:
-        "Real-time reservation platform featuring live availability updates via WebSockets and secure multi-provider authentication.",
-      technologies: [
-        "Shadcn",
-        "Next.js",
-        "Express.js",
-        "Prisma ORM",
-        "Neon PostgreSQL",
-        "Better-auth",
-      ],
-      page : ["Dashboard" , "Booking" , "Room Management" , "User Management"],
-      github:
-        "https://github.com/pyae-bhone-khant/Meeting-Room_Booking_System-api.git",
-      category: "platform",
-      status: "Completed",
-      featured: true,
-      duration: "2026",
-      role: "Full Stack Developer",
-      team: "UI UX - Judith",
-      gradient:
-      "from-orange-500 to-pink-500",
-    },
-    {
-      title: "Furnicture",
-      image: project5,
-      shortDescription:
-        "Furniture e-commerce platform with modern UI.",
-      description:
-        "An e-commerce website for browsing, purchasing, and managing furniture products with a premium shopping interface.",
-      technologies: [
-       "Next.js", "Zustand", "TanStack Query", "Express", "Prisma", "Redis", "BullMQ", "Jest", "Supertest"
-      ],
-      page : [ "Product List" , "Product Detail" ,  "Checkout" , "Order History"],
-      github:
-        "https://github.com/pyae-bhone-khant/furnicture-api.git",
-      category: "ecommerce",
-      status: "Completed",
-      featured: true,
-      duration: "2026",
-      role: "Full Stack Developer",
-      team: "Solo Project",
-      gradient:
-        "from-orange-500 to-pink-500",
-    },
-  {
-    title: "Zaya Social",
-    image: project3,
-    shortDescription:
-      "Modern social platform with realtime interactions.",
-    description:
-      "A social media platform for connecting with friends, sharing updates, creating posts, and building communities with a modern responsive UI.",
-    technologies: [
-      "Shadcn",
-      "Next.js",
-      "Express.js",
-      "Prisma ORM",
-      "PostgreSQL",
-    ],
-    page : [ "Profile" , "Chat" , "Notification" , "Settings"],
-    github:
-      "https://github.com/pyae-bhone-khant/Zaya-social-api.git",
-    category: "platform",
-    status: "In Progress",
-    featured: true,
-    duration: "2026",
-    role: "Full Stack Developer",
-    team: "Solo Project",
-    gradient:
-      "from-purple-500 via-pink-500 to-blue-500",
-  },
-  
-  
-
-  {
-    title: "TMDB MOVIE",
-    image: project1,
-    shortDescription:
-      "Movie discovery platform powered by TMDB API.",
-    description:
-      "A movie discovery platform that allows users to explore trending movies, ratings, trailers, and detailed movie information using TMDB API.",
-    technologies: [
-      "Next.js",
-      "Tailwind CSS",
-      "Shadcn UI",
-      "TMDB API",
-    ],
-
-    page : [ "Movie List" , "Movie Detail" , "Search" , "Rating"],
-
-    demo:
-      "https://tmdb-movie-pi.vercel.app/",
-    github:
-      "https://github.com/pyae-bhone-khant/Movie-Website.git",
-    category: "platform",
-    status: "Live",
-    featured: true,
-    duration: "2025",
-    role: "Frontend Developer",
-    team: "Solo Project",
-    gradient:
-      "from-violet-500 to-indigo-500",
-  },
+ 
 ];
 export const CONTACT = {
   address: "Hlaing Township, Yangon, Myanmar",

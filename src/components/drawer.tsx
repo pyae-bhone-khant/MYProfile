@@ -1,8 +1,16 @@
+
 "use client";
 
 import * as React from "react";
+
 import { useMediaQuery } from "@/hooks/use-media-query";
-import { Dialog, DialogContent, DialogTrigger } from "@/components/ui/dialog";
+
+import {
+  Dialog,
+  DialogContent,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+
 import {
   Drawer,
   DrawerContent,
@@ -10,7 +18,13 @@ import {
   DrawerTitle,
   DrawerTrigger,
 } from "@/components/ui/drawer";
-import { ArrowRight, ArrowUpRight, LockIcon, X } from "lucide-react";
+
+import {
+  ArrowUpRight,
+  LockIcon,
+  X,
+} from "lucide-react";
+
 import { FaGithub } from "react-icons/fa";
 
 export function DrawerDialogDemo({
@@ -29,7 +43,8 @@ export function DrawerDialogDemo({
         <DialogTrigger>
           <div className="cursor-pointer">{children}</div>
         </DialogTrigger>
-        <DialogContent className="flex max-h-[85vh] flex-col border-none bg-gray-900 text-white sm:max-w-[900px]">
+
+        <DialogContent className="flex max-h-[85vh] flex-col border-none bg-gradient-to-br from-[#070B1A] via-[#0D1230] to-[#1A0B2E] text-white sm:max-w-[900px]">
           <div className="flex-1 overflow-y-auto pr-2">
             <div className="mt-5 w-full px-5">
               <img
@@ -38,82 +53,93 @@ export function DrawerDialogDemo({
                 className="h-auto w-full rounded-xl border border-blue-300 object-cover"
               />
             </div>
+
             <div className="px-10">
-              {/* h-120 မှ h-auto သို့ ပြောင်းလဲထားပါသည် (စာများလျှင် အောက်သို့ ဆွဲဆန့်နိုင်ရန်) */}
-              <div className="rounded-4xl mt-13 h-auto mb-10 w-full border border-gray-800 bg-[#010114] p-6">
-                <p className="bg-linear-to-r from-blue-600 to-white bg-clip-text text-xl text-transparent">
+              <div className="rounded-4xl mt-13 mb-10 h-auto w-full border border-white/10 bg-gradient-to-br from-[#090B1F] via-[#11153A] to-[#1B1035] p-6">
+                <p className="bg-gradient-to-r from-cyan-400 via-blue-500 to-purple-500 bg-clip-text text-xl text-transparent">
                   {project.category}
                 </p>
+
                 <h1 className="mt-2 text-2xl font-bold text-white">
                   {project.title}
                 </h1>
-                <p className="mt-2 text-purple-400"> with {project.team}</p>
+
+                <p className="mt-2 text-purple-400">
+                  with {project.team}
+                </p>
+
                 <p className="mt-5 text-xl text-white/75">
                   {project.description}
                 </p>
-                
-                {/* flex-wrap ထည့်ထားပါသည် */}
+
+                {/* Pages */}
                 <div className="flex flex-wrap gap-4">
                   {project.page &&
-                    project.page.map((page: string, index: number) => (
-                      <p
-                        key={index}
-                        className="mt-4 rounded border border-gray-400 bg-gray-800 px-4 py-2 text-xl text-white"
-                      >
-                        {page}
-                      </p>
-                    ))}
+                    project.page.map(
+                      (page: string, index: number) => (
+                        <p
+                          key={index}
+                          className="mt-4 rounded border border-white/20 bg-white/10 px-4 py-2 text-xl text-white backdrop-blur-sm"
+                        >
+                          {page}
+                        </p>
+                      ),
+                    )}
                 </div>
 
-                {/* flex-wrap ထည့်ထားပါသည် */}
+                {/* Technologies */}
                 <div className="flex flex-wrap gap-4">
                   {project.technologies &&
-                    project.technologies.map((tech: string, index: number) => (
-                      <p
-                        key={index}
-                        className="mt-4 rounded-full border border-gray-600 bg-purple-600 px-2 py-1 text-sm text-white"
-                      >
-                        {tech}
-                      </p>
-                    ))}
+                    project.technologies.map(
+                      (tech: string, index: number) => (
+                        <p
+                          key={index}
+                          className="mt-4 rounded-full border border-purple-400/30 bg-gradient-to-r from-blue-600/80 to-purple-600/80 px-2 py-1 text-sm text-white"
+                        >
+                          {tech}
+                        </p>
+                      ),
+                    )}
                 </div>
 
-                {/* Button များအတွက်လည်း နေရာမဆံ့ပါက အောက်ဆင်းရန် flex-wrap ထည့်ထားပါသည် */}
-                <div className="flex w-full flex-wrap items-center justify-center gap-4 sm:gap-8 text-center">
+                {/* Buttons */}
+                <div className="flex w-full flex-wrap items-center justify-center gap-4 text-center sm:gap-8">
+                  {/* Github */}
                   {project.github ? (
                     <a
                       href={project.github}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-10 flex min-w-[200px] flex-1 items-center justify-center rounded-full border border-gray-800 bg-gray-800 py-4 text-xl text-white transition hover:bg-gray-700"
+                      className="mt-10 flex min-w-[200px] flex-1 items-center justify-center rounded-full border border-white/10 bg-white/10 py-4 text-xl text-white backdrop-blur-sm transition hover:bg-white/20"
                     >
                       <span className="flex items-center justify-center gap-2">
                         View Source Code <FaGithub />
                       </span>
                     </a>
                   ) : (
-                    <p className="mt-10 flex min-w-[200px] flex-1 cursor-not-allowed items-center justify-center rounded-full border border-gray-800 bg-gray-800 py-4 text-xl text-white opacity-50">
+                    <p className="mt-10 flex min-w-[200px] flex-1 cursor-not-allowed items-center justify-center rounded-full border border-white/10 bg-white/10 py-4 text-xl text-white opacity-50">
                       <span className="flex items-center justify-center gap-2">
                         Private Repository <LockIcon />
                       </span>
                     </p>
                   )}
 
+                  {/* Demo */}
                   {project.demo ? (
                     <a
                       href={project.demo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="mt-10 min-w-[200px] flex-1 rounded-full border border-gray-800 bg-purple-600 py-4 text-xl text-white transition hover:bg-purple-700"
+                      className="mt-10 flex min-w-[200px] flex-1 items-center justify-center rounded-full border border-purple-400/20 bg-gradient-to-r from-blue-600 to-purple-600 py-4 text-xl text-white transition hover:from-blue-700 hover:to-purple-700"
                     >
                       <span className="flex items-center justify-center gap-2">
-                        view Demo <ArrowUpRight />
+                        View Demo <ArrowUpRight />
                       </span>
                     </a>
                   ) : (
-                    <p className="mt-10 flex min-w-[200px] flex-1 cursor-not-allowed items-center justify-center rounded-full border border-gray-800 bg-gray-800 py-4 text-xl text-white opacity-50">
+                    <p className="mt-10 flex min-w-[200px] flex-1 cursor-not-allowed items-center justify-center rounded-full border border-white/10 bg-white/10 py-4 text-xl text-white opacity-50">
                       <span className="flex items-center justify-center gap-2">
-                        demo not available <X />
+                        Demo Not Available <X />
                       </span>
                     </p>
                   )}
@@ -131,9 +157,12 @@ export function DrawerDialogDemo({
       <DrawerTrigger>
         <div className="cursor-pointer">{children}</div>
       </DrawerTrigger>
-      <DrawerContent className="max-h-[90vh] border-none bg-[#1a1a1a] text-white">
+
+      <DrawerContent className="max-h-[90vh] border-none bg-gradient-to-br from-[#080B18] via-[#11152F] to-[#1A0D2E] text-white">
         <DrawerHeader>
-          <DrawerTitle>{project.title}</DrawerTitle>
+          <DrawerTitle className="text-white">
+            {project.title}
+          </DrawerTitle>
         </DrawerHeader>
 
         <div className="overflow-y-auto p-4">
@@ -142,7 +171,11 @@ export function DrawerDialogDemo({
             alt={project.title}
             className="h-auto w-full rounded-lg object-cover"
           />
-          <p className="mt-4 text-sm text-gray-400">{project.description}</p>
+
+          <p className="mt-4 text-sm text-gray-400">
+            {project.description}
+          </p>
+
           <p className="mt-2 text-sm font-semibold text-purple-400">
             Tech: {project.technologies?.join(", ")}
           </p>
@@ -151,3 +184,4 @@ export function DrawerDialogDemo({
     </Drawer>
   );
 }
+
