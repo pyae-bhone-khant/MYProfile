@@ -38,6 +38,33 @@ export const EXPERIENCES = [
 
 export const PROJECTS = [
   {
+    title: "Next Estate",
+    image: project4,
+    shortDescription:
+      "Modern real estate marketplace for discovering and managing properties.",
+    description:
+      "A full-stack real estate platform where users can browse property listings, explore the marketplace, manage their profiles, and update property information through a secure and intuitive interface.",
+    technologies: [
+      "Next.js",
+      "React 19 ",
+      "Prisma ",
+     "MySQL",
+    "Better Auth",
+    ], 
+    page : [ "Home" , "MarketPlace" , "Properties" , "Edit Profile"] ,
+    github:
+      "https://github.com/pyae-bhone-khant/NextEaste.git",
+    category: "platform",
+    status: "Completed",
+    featured: true,
+    duration: "2026",
+    role: "Full Stack Developer",
+    team: "Solo Project",
+    demo: "https://nexteaste.onrender.com/",
+    gradient:
+      "from-purple-500 via-pink-500 to-blue-500",
+  }, 
+  {
     title: "COOKCRAFT",
     image: project4,
     shortDescription:
@@ -93,7 +120,7 @@ export const PROJECTS = [
     duration: "2026",
     role: "Full Stack Developer",
     team: "Solo Project",
-    // demo: "https://cook-recipe-tawny.vercel.app/",
+    demo: "https://skillset-mm-app.vercel.app/",
     gradient:
       "from-purple-500 via-pink-500 to-blue-500",
   },
