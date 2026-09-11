@@ -5,6 +5,7 @@ import project4 from "../assets/projects/project4.png";
 import project5 from "../assets/projects/project5.png";
 import project6 from "../assets/projects/project6.png";
 import project7 from "../assets/projects/project7.png";
+import project8 from "../assets/projects//project8.png"
 
 
 
@@ -39,7 +40,7 @@ export const EXPERIENCES = [
 export const PROJECTS = [
   {
     title: "Next Estate",
-    image: project4,
+    image: project8,
     shortDescription:
       "Modern real estate marketplace for discovering and managing properties.",
     description:
