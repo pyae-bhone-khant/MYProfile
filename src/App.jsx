@@ -6,8 +6,14 @@ import Projects from "./components/Projects";
 import Technologies from "./components/Technologies";
 import Footer from "./components/Footer";
 import Experience from "./components/Experience";
+import { useEffect } from "react";
+import { renderCanvas } from "./lib/renderCanvas";
 
 function App() {
+  useEffect(() => {
+    renderCanvas();
+  }, []);
+
   return ( 
     <div className="overflow-x-hidden text-stone-300 antialiased">
       <div className="fixed inset-0 -z-10">
@@ -25,6 +31,10 @@ function App() {
             />
           ))}
         </div>
+        <canvas
+          className="pointer-events-none absolute inset-0 w-full h-full"
+          id="cursor-canvas"
+        ></canvas>
       </div>
 
       <div className="container mx-auto px-8 lg:pt-20 md:px-16 ">
