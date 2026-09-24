@@ -3,12 +3,15 @@ import { createRoot } from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import SmartNavbar from './components/MainNav.jsx'
+import { ThemeProvider } from './context/ThemeContext.jsx'
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <div className=''>
-      <SmartNavbar />
-      <App />
-    </div>
+    <ThemeProvider>
+      <div className=''>
+        <SmartNavbar />
+        <App />
+      </div>
+    </ThemeProvider>
   </StrictMode>
 )
