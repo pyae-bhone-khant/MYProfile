@@ -8,6 +8,7 @@ import Footer from "./components/Footer";
 import Experience from "./components/Experience";
 import { useEffect } from "react";
 import { renderCanvas } from "./lib/renderCanvas";
+import ToBlogPage from "./components/toBlogPage";
 
 function App() {
   useEffect(() => {
@@ -57,7 +58,12 @@ function App() {
         <div className="border w-full border-gray-800"></div>
         <section id="projects" className="scroll-mt-24">
         <Projects />
-        </section>
+        </section> 
+        <div className="border w-full border-gray-800"></div>
+
+         {/* <section id="contact" className="scroll-mt-24">
+        <ToBlogPage />
+        </section> */}
         <section id="contact" className="scroll-mt-24">
         <Contact />
         </section>
