@@ -61,9 +61,9 @@ function App() {
         </section> 
         <div className="border w-full border-gray-800"></div>
 
-         {/* <section id="contact" className="scroll-mt-24">
+          <section id="contact" className="scroll-mt-24">
         <ToBlogPage />
-        </section> */}
+        </section> 
         <section id="contact" className="scroll-mt-24">
         <Contact />
         </section>
